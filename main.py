@@ -8,7 +8,10 @@ abstract_file="text_with_abstracts.txt"
 df=pd.read_excel(excel_file)
 
 def clean_title(text):
-    return text.strip().title()
+    title=text.strip().title()
+    title = re.sub(r"\s*\n\s*", " ", title)
+    title = re.sub(r"\s{2,}", " ", title)
+    return title
 
 def to_superscript(text):
     sup_map={

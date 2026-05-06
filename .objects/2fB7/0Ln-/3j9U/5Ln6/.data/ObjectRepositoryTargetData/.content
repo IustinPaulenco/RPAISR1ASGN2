@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="fSl-6-TYCEiIcTxevau5QA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="1107, 103, 30, 30" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Mailings' /&gt;&lt;uia cls='NetUIChunk' name='Preview Results' /&gt;&lt;uia automationid='MailMergeGoToNextRecord' cls='NetUIRibbonButton' name='Next' /&gt;" Guid="27e991cf-824c-408c-80d1-459b664dac16" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='OpusApp' title='2026_jRoMedINF-AuthorNAME.docx - Word' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="5085936c09e938202b517768088a6dc0.jpg" xmlns="">06YomR4Ef_0Ci50mjEmuUuw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

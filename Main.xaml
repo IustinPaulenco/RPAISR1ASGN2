@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/python" xmlns:p1="http://schemas.uipath.com/workflow/activities/word" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/python" xmlns:p1="http://schemas.uipath.com/workflow/activities/word" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -23,8 +23,6 @@
       <x:String>UiPath.Core</x:String>
       <x:String>UiPath.Core.Activities</x:String>
       <x:String>System.Windows.Markup</x:String>
-      <x:String>GlobalVariablesNamespace</x:String>
-      <x:String>GlobalConstantsNamespace</x:String>
       <x:String>UiPath.Python.Activities</x:String>
       <x:String>UiPath.Shared.Activities</x:String>
       <x:String>System.Runtime.Serialization</x:String>
@@ -34,6 +32,26 @@
       <x:String>UiPath.Shared.Activities.Business</x:String>
       <x:String>UiPath.Word.Activities</x:String>
       <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Activities.System.Text</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -72,44 +90,196 @@
       <AssemblyReference>UiPath.Word</AssemblyReference>
       <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="897.2,824" sap2010:WorkflowViewState.IdRef="Sequence_3">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="486.4,4238.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <p:PythonScope OperationTimeout="{x:Null}" DisplayName="Python Scope" sap:VirtualizedContainerService.HintSize="451.2,459.2" sap2010:WorkflowViewState.IdRef="PythonScope_1" LibraryPath="C:\Users\Iustin\AppData\Local\Programs\Python\Python310\python310.dll" Path="C:\Users\Iustin\AppData\Local\Programs\Python\Python310">
+    <p:PythonScope OperationTimeout="{x:Null}" DisplayName="Python Scope" sap:VirtualizedContainerService.HintSize="486.4,459.2" sap2010:WorkflowViewState.IdRef="PythonScope_1" LibraryPath="C:\Users\Iustin\AppData\Local\Programs\Python\Python310\python310.dll" Path="C:\Users\Iustin\AppData\Local\Programs\Python\Python310" WorkingFolder="./">
       <p:PythonScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="PythonEngineSessionProperty" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,137.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,225.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <p:RunScript Code="{x:Null}" DisplayName="Run Python Script" sap:VirtualizedContainerService.HintSize="416,77.6" sap2010:WorkflowViewState.IdRef="RunScript_2" ScriptFile="./main.py" />
+            <p:RunScript Code="{x:Null}" DisplayName="Run Python Script" sap:VirtualizedContainerService.HintSize="416,165.6" sap2010:WorkflowViewState.IdRef="RunScript_2" ScriptFile="./main.py" />
           </Sequence>
         </ActivityAction>
       </p:PythonScope.Body>
     </p:PythonScope>
-    <p1:WordApplicationScope DisplayName="Word Application Scope" FilePath="2026_jRoMedINF-AuthorNAME.docx" sap:VirtualizedContainerService.HintSize="451.2,341.6" sap2010:WorkflowViewState.IdRef="WordApplicationScope_1">
+    <Assign sap:VirtualizedContainerService.HintSize="486.4,174.4" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[GlobalVariablesNamespace.GlobalVariables.lastText]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[""]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <p1:WordApplicationScope DisplayName="Word Application Scope" FilePath="2026_jRoMedINF-AuthorNAME.docx" sap:VirtualizedContainerService.HintSize="486.4,3581.6" sap2010:WorkflowViewState.IdRef="WordApplicationScope_1">
       <p1:WordApplicationScope.Body>
         <ActivityAction x:TypeArguments="ui:WordDocument">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,220" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484.8,3460" sap2010:WorkflowViewState.IdRef="Sequence_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <p1:WordExportToPdf DisplayName="Save Document as PDF" FilePath="2026_jRoMedINF-AuthorNAME.pdf" sap:VirtualizedContainerService.HintSize="416,160" sap2010:WorkflowViewState.IdRef="WordExportToPdf_1" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Mailings'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,193.6" sap2010:WorkflowViewState.IdRef="NClick_1" InScope="[WordDocumentScope]" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="WordDocumentScope" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable ContentHash="c70JDR-w_UOLjFG3LgSfwg" DesignTimeRectangle="536, 61, 87, 38" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIPanViewer' name='Ribbon Tabs' /&gt;&lt;uia automationid='TabMailings' cls='NetUIRibbonTab' name='Mailings' /&gt;" Guid="fe6fd638-cc1d-4ca2-9ca0-17c14ec3e187" InformativeScreenshot="5fe41c0c7bf6bcedcd9e5fcd4d91c103.jpg" Reference="cXuWrnHz1Ei9TpSVdJ2r4g/gWx8knrlxUGC-k2LnbIKRA" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='OpusApp' title='2026_jRoMedINF-AuthorNAME.docx - Word' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Select Recipients'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,193.6" sap2010:WorkflowViewState.IdRef="NClick_5" InScope="[WordDocumentScope]" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="WordDocumentScope" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable ContentHash="0XZcbe3bAEqgPqyMx5qfUA" DesignTimeRectangle="245, 103, 88, 96" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Mailings' /&gt;&lt;uia cls='NetUIChunk' name='Start Mail Merge' /&gt;&lt;uia automationid='MailMergeSelectRecipients' cls='NetUIAnchor' name='Select Recipients' /&gt;" Guid="7b5defa5-f50b-4312-9f0c-f6d5a2426a23" InformativeScreenshot="85813770ce755cbecdbe740e0c7dc636.jpg" Reference="cXuWrnHz1Ei9TpSVdJ2r4g/rHWSGslmP0qwR-4eScZT9w" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='OpusApp' title='2026_jRoMedINF-AuthorNAME.docx - Word' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Use an Existing List...'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,193.6" sap2010:WorkflowViewState.IdRef="NClick_4" InScope="[WordDocumentScope]" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="WordDocumentScope" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable ContentHash="roWazd1lb0SpeqUMXMjJRg" DesignTimeRectangle="2, 38, 286, 36" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd cls='MsoCommandBarDock' title='MsoDockTop' /&gt;&lt;wnd cls='MsoWorkPane' title='Ribbon' /&gt;&lt;wnd aaname='Ribbon' cls='NetUIHWND' /&gt;&lt;ctrl name='Use an Existing List...' role='menu item' /&gt;" Guid="aaadec51-b12a-4dc6-9060-f3494c9b1f72" InformativeScreenshot="a44c3be5f1a4b26aa342e2b75163cad9.jpg" Reference="cXuWrnHz1Ei9TpSVdJ2r4g/ibToPqZjYUmpZU0kFGFKPA" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='OpusApp' title='2026_jRoMedINF-AuthorNAME.docx - Word' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Address CUsersIusti…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InScope="[WordDocumentScope]" InteractionMode="SameAsCard" ScopeIdentifier="WordDocumentScope" Text="[System.IO.Path.GetFullPath(&quot;./&quot;)]" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable ContentHash="LQcxj6fNpk6r7lRzpJekCA" DesignTimeRectangle="144, 43, 445, 39" ElementType="Toolbar" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1001' title='Address: C:\Users\Iustin\Documents\My Data Sources' /&gt;" Guid="cbd891b5-099f-4a24-ac63-2b0ce50898b6" InformativeScreenshot="2aca1af5d86085400fa008c638704490.jpg" Reference="cXuWrnHz1Ei9TpSVdJ2r4g/d_XE3wOfIUqq8nTl6qUEDg" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='#32770' title='Select Data Source' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset Position="BottomRight" X="-7" Y="-16" />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,256.8" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" InScope="[WordDocumentScope]" InteractionMode="HardwareEvents" ScopeIdentifier="WordDocumentScope" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V5" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Edit'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InScope="[WordDocumentScope]" InteractionMode="SameAsCard" ScopeIdentifier="WordDocumentScope" Text="final_papers.xlsx" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable ContentHash="yrXLNAW6Skq93zmBjW-d7w" DesignTimeRectangle="234, 554, 423, 20" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="a2f754fe-a51e-4a54-b68a-77744263457e" InformativeScreenshot="ec4448defaa846057ef7783050528697.jpg" Reference="cXuWrnHz1Ei9TpSVdJ2r4g/Dbk3xUHkDU61raqKxVPP9w" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='#32770' title='Select Data Source' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,256.8" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" InScope="[WordDocumentScope]" InteractionMode="HardwareEvents" ScopeIdentifier="WordDocumentScope" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V5" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,193.6" sap2010:WorkflowViewState.IdRef="NClick_6" InScope="[WordDocumentScope]" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="WordDocumentScope" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable ContentHash="EtT8OmWSoUuIPVFpjsO7kA" DesignTimeRectangle="374, 255, 114, 31" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='OK' role='push button' /&gt;" Guid="c00604e2-92be-4da9-80c5-65986af4a1c8" InformativeScreenshot="9c0bcfac5b935248042b60f606edbbb8.jpg" Reference="cXuWrnHz1Ei9TpSVdJ2r4g/m6JeQtETk0CnlW1TamGlCQ" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='bosa_sdm_msword' title='Select Table' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'First'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,193.6" sap2010:WorkflowViewState.IdRef="NClick_3" InScope="[WordDocumentScope]" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="WordDocumentScope" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable ContentHash="hOoIeBNJzEGJBbwGG2m-Yg" DesignTimeRectangle="986, 103, 30, 30" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Mailings' /&gt;&lt;uia cls='NetUIChunk' name='Preview Results' /&gt;&lt;uia automationid='MailMergeGoToFirstRecord' cls='NetUIRibbonButton' name='First' /&gt;" Guid="2f73024e-9e0c-4a57-ba31-52e9c9de2d73" InformativeScreenshot="a4603e54899fc88dc73bab7b5d289d37.jpg" Reference="cXuWrnHz1Ei9TpSVdJ2r4g/DEFjsy7sv0CnTwAVmrtFsw" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='OpusApp' title='2026_jRoMedINF-AuthorNAME.docx - Word' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <p1:WordReadText DisplayName="Read Text" sap:VirtualizedContainerService.HintSize="451.2,122.4" sap2010:WorkflowViewState.IdRef="WordReadText_4" Text="[GlobalVariablesNamespace.GlobalVariables.text]" />
+            <If Condition="[GlobalVariablesNamespace.GlobalVariables.text.Split(VbNewLine.ToCharArray,StringSplitOptions.RemoveEmptyEntries)(0) &lt;&gt; &quot;«paper_ID»«title»&quot;]" sap:VirtualizedContainerService.HintSize="451.2,472.8" sap2010:WorkflowViewState.IdRef="If_2">
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="449.6,89.6" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="449.6,244.8" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Preview Results'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,184.8" sap2010:WorkflowViewState.IdRef="NClick_7" InScope="[WordDocumentScope]" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="WordDocumentScope" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable ContentHash="rZetFCmoZEC24bIJZL1OdQ" DesignTimeRectangle="916, 103, 57, 96" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Mailings' /&gt;&lt;uia cls='NetUIChunk' name='Preview Results' /&gt;&lt;uia automationid='MailMergeResultsPreview' cls='NetUIRibbonButton' name='Preview Results' /&gt;" Guid="7344e722-42ac-42cc-a0fc-fd985a455e55" InformativeScreenshot="03103ce51eb8e325228915e3010f0b56.jpg" Reference="cXuWrnHz1Ei9TpSVdJ2r4g/2YDUMMXTi0msX3IDI0fS4Q" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='OpusApp' title='2026_jRoMedINF-AuthorNAME.docx - Word' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </If.Else>
+            </If>
+            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="451.2,832" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+              <ui:InterruptibleDoWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,710.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="Assign_2">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[GlobalVariablesNamespace.GlobalVariables.lastText]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[GlobalVariablesNamespace.GlobalVariables.text]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <p1:WordExportToPdf DisplayName="Save Document as PDF" FilePath="[&quot;./output/&quot;+System.Text.RegularExpressions.Regex.Replace(GlobalVariablesNamespace.GlobalVariables.text.Split(VbNewLine.ToCharArray,StringSplitOptions.RemoveEmptyEntries)(0), &quot;[^a-zA-Z0-9]&quot;, &quot;&quot;)+&quot;.pdf&quot;]" sap:VirtualizedContainerService.HintSize="416,168.8" sap2010:WorkflowViewState.IdRef="WordExportToPdf_1" />
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,193.6" sap2010:WorkflowViewState.IdRef="NClick_2" InScope="[WordDocumentScope]" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="WordDocumentScope" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable ContentHash="fSl-6-TYCEiIcTxevau5QA" DesignTimeRectangle="1107, 103, 30, 30" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIOrderedGroup' name='Mailings' /&gt;&lt;uia cls='NetUIChunk' name='Preview Results' /&gt;&lt;uia automationid='MailMergeGoToNextRecord' cls='NetUIRibbonButton' name='Next' /&gt;" Guid="27e991cf-824c-408c-80d1-459b664dac16" InformativeScreenshot="5085936c09e938202b517768088a6dc0.jpg" Reference="cXuWrnHz1Ei9TpSVdJ2r4g/5Ln6L9o3sUykkmLdyi9S6Q" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='OpusApp' title='2026_jRoMedINF-AuthorNAME.docx - Word' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <p1:WordReadText DisplayName="Read Text" sap:VirtualizedContainerService.HintSize="416,113.6" sap2010:WorkflowViewState.IdRef="WordReadText_3" Text="[GlobalVariablesNamespace.GlobalVariables.text]" />
+                </Sequence>
+              </ui:InterruptibleDoWhile.Body>
+              <ui:InterruptibleDoWhile.Condition>
+                <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="GlobalVariablesNamespace.GlobalVariables.lastText&lt;&gt;GlobalVariablesNamespace.GlobalVariables.text" />
+              </ui:InterruptibleDoWhile.Condition>
+            </ui:InterruptibleDoWhile>
           </Sequence>
         </ActivityAction>
       </p1:WordApplicationScope.Body>

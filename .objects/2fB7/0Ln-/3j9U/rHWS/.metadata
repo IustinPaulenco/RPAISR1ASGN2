@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Select Recipients",
+  "Type": "Element",
+  "Id": "rHWSGslmP0qwR-4eScZT9w",
+  "Reference": "cXuWrnHz1Ei9TpSVdJ2r4g/rHWSGslmP0qwR-4eScZT9w",
+  "ParentRef": "cXuWrnHz1Ei9TpSVdJ2r4g/3j9U7C0-ekGCebwnfuxWnQ",
+  "Created": "2026-05-06T22:31:06.5396201Z",
+  "Updated": "2026-05-06T22:31:06.5396201Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.31.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

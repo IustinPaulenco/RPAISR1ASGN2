@@ -6,6 +6,7 @@
   "dependencies": {
     "UiPath.Python.Activities": "[2.2.0-preview]",
     "UiPath.System.Activities": "[26.2.4]",
+    "UiPath.UIAutomation.Activities": "[25.10.31]",
     "UiPath.Word.Activities": "[2.5.1]"
   },
   "webServices": [],

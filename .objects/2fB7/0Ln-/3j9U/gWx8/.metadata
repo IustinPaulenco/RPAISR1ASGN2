@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Mailings",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "gWx8knrlxUGC-k2LnbIKRA",
+  "Reference": "cXuWrnHz1Ei9TpSVdJ2r4g/gWx8knrlxUGC-k2LnbIKRA",
+  "ParentRef": "cXuWrnHz1Ei9TpSVdJ2r4g/3j9U7C0-ekGCebwnfuxWnQ",
+  "Created": "2026-05-06T22:09:52.1995594Z",
+  "Updated": "2026-05-06T22:09:52.1995594Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.31.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
