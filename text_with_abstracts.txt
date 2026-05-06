@@ -1,0 +1,1477 @@
+Submission #1: Designing for Trust: Human–AI Collaboration in Mental-Health Screening
+Interfaces
+================================================================================================
+
+Abstract
+--------
+Background: AI screening tools are rapidly becoming part of routine clinical work, and many general practitioners now lean on system suggestions when assessing possible mental-health concerns. These tools bring consistency and speed, yet their design rarely considers how clinicians interpret, trust, and act on AI feedback in the flow of a real consultation. This reflection was informed by work with AI startups that prioritize scalability and automation over clinical nuance, revealing a growing gap between product ambition and ethical readiness. Beyond the performance of AI itself, the greater risk lies in how confidently it is adopted by clinicians, startups, and patients who may mistake automation for moral neutrality.
+
+Methods: Based on observations and product work with mental-health AI startups, this reflection explores the User Experience (UX) implications of automation in diagnostic decision-making. It looks at how interface elements such as confidence scores, alert phrasing, and visual displays shape clinicians’ reasoning and their conversations with patients.
+
+Results: Three tensions were observed. (1) Trust calibration: overly assertive messages invite overreliance, while uncertain ones are often ignored. (2) Context loss: templated notes and generated summaries can flatten a patient’s story, especially where emotion or culture matters. (3) Workflow anchoring: once an AI suggestion enters the record, it can steer later judgments even when the initial evidence is weak.
+
+Conclusions: Accuracy alone does not make these systems effective. Careful UX design, achieved through transparent outputs, reversible suggestions, and built-in space for reflection, can help clinicians keep control of meaning-making. When AI is treated as a partner rather than an authority, empathy and accountability are more likely to survive in an automated clinical world.
+
+Author
+------
+Jungna Lee <beensolow@gmail.com> (Independent UX Researcher)
+
+Presenter First and Last Name:
+------------------------------
+Jungna Lee
+
+Keywords
+--------
+AI-assisted mental health screening, User experience, Automation bias, Clinical judgment, Ethical design, Human–AI collaboration, Moral neutrality
+
+Topics
+------
+* Track 2 - Ethics and Privacy in the Age of Digital Health
+* Track 6 - AI in Medicine: Turning Data into Predictions and Insights
+
+
+Submission #3: Bridging Traditional Health Information Management and Modern Data Intelligence
+in a Non-Digitalized Tertiary Hospital
+================================================================================================
+
+Abstract
+--------
+Title:
+Bridging Traditional Health Information Management (HIM) and Modern Data Intelligence
+Transforming healthcare data in low-resource settings from manual records to intelligent insights.
+
+Many healthcare institutions in low-resource settings, including the University College Hospital (UCH), Ibadan, operate with predominantly manual health information systems. This limits the completeness, quality, and usability of clinical data for operational, research, and decision-support purposes. Effective integration of data engineering, data science, machine learning, and AI can transform the medical data lifecycle, even in non-digitalized environments.
+
+Methods:
+We designed and implemented end-to-end data workflows incorporating Django-based ETL pipelines with PostgreSQL and MySQL, Excel preprocessing, and Power BI analytics dashboards. Raw clinical data from paper registers and semi-structured sources were digitized, standardized, and validated. Predictive models using scikit-learn were developed for breast cancer, diabetes risk stratification, and hospital utilization forecasting. Prototype digital health applications were developed using Tkinter and Kivy, and AI-assisted workflows for automated text classification and decision support were implemented. Supplementary YouTube demonstrations document ETL, data science, machine learning, and AI processes.
+
+Results:
+The ETL pipelines successfully converted manual hospital data into clean, structured datasets suitable for analysis. Power BI dashboards provided interactive operational insights, including maternal and neonatal outcomes, disease trends, and bed occupancy patterns. Machine learning models achieved predictive accuracy sufficient to support clinical risk stratification and resource planning. Prototype applications demonstrated practical digital interventions that can augment manual HIM workflows.
+
+Conclusions:
+Even in non-digitalized hospitals, structured digital workflows integrating data engineering, analytics, and AI can enhance the medical data lifecycle, support evidence-based decision-making, and lay the foundation for scalable digital health transformation. Supplementary demonstration videos provide additional evidence of feasibility and practical implementation.
+
+Author
+------
+ADEOYE BLESSED omobuwa <adeoye.omobuwa@uch-ibadan.org.ng> (Health Information Management
+Department, Data Science Unit, University College Hospital, Ibadan, Oyo State, Nigeria)
+
+Presenter First and Last Name:
+------------------------------
+ADEOYE omobuwa
+
+Keywords
+--------
+Medical Informatics
+
+Health Information Management (HIM)
+
+Medical Data Lifecycle
+
+Data Engineering / ETL
+
+Machine Learning and AI in Healthcare
+
+Health Data Analytics / Visualization
+
+Topic
+-----
+* Track 1 - Standardization and the Life Cycle of Medical Data: From Collection to Decision
+  Support
+
+Please indicate if there were any AI tools involved in the abstract preparation.
+--------------------------------------------------------------------------------
+<ul class="topict topict-long"><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22AI+tools+might+have+been+used+for+partial+text+generation%2C+e.g.%2C+summary%2C+conclusions%2C+etc.%22">AI tools might have been used for partial text generation, e.g., summary, conclusions, etc.</a></li></ul>
+
+
+Submission #5: Kardio Diagnostix Implementation of a Continuous Medical Data Lifecycle
+======================================================================================
+
+Abstract
+--------
+Kardio Diagnostix was founded with the goal of reducing the burden on health systems while increasing the quality of care. We have developed a a novel deep learning architecture integrating a physics-informed Harmonic-Percussive-Residual (HPR) signal decomposition with a stacked Long Short-Term Memory (LSTM) network to screen heart murmurs found in 3.2 million children yearly in North America alone. Our platform has the potential to reduce the number of unnecessary referrals of innocent murmurs to pediatric cardiologists in North America from 1.6 million to 75,000, reducing the cost of care by US$3.8 billion annually. Besides cost reduction, we will increase the detection of abnormal murmurs by 75%. Our product has a potential to access an annual US$1.5 billion market for the care of children with murmurs in North America. We tested our product with heart murmurs for 300 patients in Nova Scotia. The data was collected he data was obtained by the cardiologists or delegated research assistant for the patients who arrived at their clinic during the study period. We are expanding our data collection to other regions starting with a clinic in Toronto.
+We describe a comprehensive, data science-driven methodology for developing and deploying any intelligent medical diagnostics application. This strategy centers on a cyclical process that ensures the diagnostic model is accurate, integrated, compliant, and continuously improving within a clinical environment. The foundational stage involves establishing a secure, scalable architecture for handling sensitive medical data, including implementing a real-time data ingestion and feedback integration engine and designing data pipelines for EMR data synchronization. Next, the diagnostic model must be validated at scale using diverse, real-world clinical data to ensure accuracy. Concurrently, co-design sessions and field trials help develop production-ready UI/UX that aligns with clinical workflows. Crucial for long-term use is the MLOps automation phase, which involves setting up CI/CD pipelines, real-time monitoring, and auto-retraining mechanisms to establish a continuous learning loop. Finally, to ensure deployment readiness, the system must integrate robust features for secure data handling, access controls, and audit logging to meet compliance standards (e.g., HIPAA/PIPEDA). Implementing Explainable AI (XAI) dashboards provides necessary transparency for clinicians, supporting the final deployment.
+
+Authors
+-------
+1. Pawan Lingras <pawan.lingras@smu.ca> (Saint Mary's University, Halifax, Nova Scotia)
+2. Robert Chen <robert@kardiodiagnostix.com> (Kardio Diagnostix)
+3. Santokh Dhillon <santokh.dhillon@kardiodiagnostix.com> (Kardio Diagnostix)
+4. Mohammed Shameer Iqbal <shameer@kardiodiagnostix.com> (Kardio Diagnostix)
+
+Presenter First and Last Name:
+------------------------------
+Pawan Lingras
+
+Keywords
+--------
+Pediatric Heart Murmur Screening; Deep-Learning AI Platform; Healthcare Cost Reduction; MLOps Automation; Clinical Workflow Integration; Explainable AI
+
+Topic
+-----
+* Track 4 - Medical Data-Driven Solutions & Digital Tools
+
+Please indicate if there were any AI tools involved in the abstract preparation.
+--------------------------------------------------------------------------------
+<ul class="topict topict-long"><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22AI+tools+might+have+been+used+for+partial+text+generation%2C+e.g.%2C+summary%2C+conclusions%2C+etc.%22">AI tools might have been used for partial text generation, e.g., summary, conclusions, etc.</a></li></ul>
+
+
+Submission #17: MEDICAL SCORES
+==============================
+
+Abstract
+--------
+MEDICAL SCORES
+Vasile-Lucian BOICULESE, Adrian DOLOCA, Cristina-Gena DASCALU, Mihaela MOSCALU,
+Madalina-Elena DATCU
+Preventive Medicine and Interdisciplinarity Department, Faculty of Medicine, Grigore T. Popa University of Medicine and Pharmacy Iasi
+
+Background
+Medical scores represent simplified methods for estimating the prognosis, risk or severity of a condition and are also used in therapeutic decisions, triage and resource allocation, assessment of functionality and frailty, standardization of medical communication. 
+Medical scores add support in the assessment of health status, providing a common, objective and comparable framework for decision-making, but do not replace clinical judgment.
+Applied medicine must be objective and must eliminate the subjective form caused by the human factor. This is achieved by transforming clinical data into evidence-based decisions - thus reducing human errors and ensuring that all patients benefit from an equally optimized and efficient treatment.
+
+Methods
+Defining score is a process that follows a rigorous statistical methodology to ensure that the score is predictive, reproducible, and applicable in practice.
+The steps required to define the score:
+•	Data collection,
+•	Definition of variables for inclusion,
+•	Model design and optimization (Linear, Logistic, Cox),
+•	Defining the score,
+•	Score performance (Se, Sp, ROC curve),
+•	Validation.
+New methods for scoring (inspired by Machine Learning): Fuzzy Systems, Neural Networks, Classifications, Clustering, Dimensions Reduction (Principal Components).
+Given the power of computers, complex scoring techniques can be applied, but the influence of covariates and factors would be more difficult or even impossible to quantify (example: neural networks). 
+The scores are not perfect and as a result have disadvantages: they do not capture all individual peculiarities, they can be applied rigidly, and they sometimes underestimate or overestimate risk.
+One method of compensating for these errors is to adapt the scores to the target population.
+
+Conclusions
+Scores represent an important medical support, providing information through a simplified form of calculation by quantifying the effect of covariates.
+The bridge between the complex reality of medical cases and statistical-mathematical rigor is made by scores in a simplified but useful form.
+
+Authors
+-------
+1. Vasile Lucian BOICULESE <lboiculese@gmail.com> (Preventive Medicine and Interdisciplinarity
+   Department, Faculty of Medicine, Grigore T. Popa University of Medicine and Pharmacy Iasi)
+2. Adrian DOLOCA <adrian.doloca@umfiasi.ro> (Preventive Medicine and Interdisciplinarity
+   Department, Faculty of Medicine, Grigore T. Popa University of Medicine and Pharmacy Iasi)
+3. Cristina-Gena DASCALU <cdascalu_info@yahoo.com> (Preventive Medicine and Interdisciplinarity
+   Department, Faculty of Medicine, Grigore T. Popa University of Medicine and Pharmacy Iasi)
+4. Mihaela MOSCALU <moscalu.mihaela@gmail.com> (Preventive Medicine and Interdisciplinarity
+   Department, Faculty of Medicine, Grigore T. Popa University of Medicine and Pharmacy Iasi)
+5. Madalina-Elena DATCU <madalina.dtc@gmail.com> (Preventive Medicine and Interdisciplinarity
+   Department, Faculty of Medicine, Grigore T. Popa University of Medicine and Pharmacy Iasi)
+
+Presenter First and Last Name:
+------------------------------
+Vasile-Lucian BOICULESE
+
+Keywords
+--------
+score, regression, optimization
+
+Topic
+-----
+* Track 3 - The Impact of Data on Medical Decision-Making
+
+Please indicate if there were any AI tools involved in the abstract preparation.
+--------------------------------------------------------------------------------
+<ul class="topict topict-long"><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22There+were+no+AI+tools+used+in+the+process%22">There were no AI tools used in the process</a></li></ul>
+
+
+Submission #19: Human Eyes and Artificial Minds: Breast Cancer Detection in Mammography — A
+Systematic Review
+================================================================================================
+
+Abstract
+--------
+Background
+Breast cancer is the most commonly diagnosed cancer for both sexes combined and the leading cause of death in women. Mortality has continued to decline since 1989, largely due to earlier detection achieved through mammography screening. This review aimed to evaluate the impact of AI-assisted breast radiologist (BR) on early breast cancer detection using mammograms, compared  to unassisted interpretation. 
+
+Methods
+A search was conducted on PubMed, Google Scholar and Mendeley for articles in the last 5 years using the keywords: “breast cancer”, “mammography” and “artificial intelligence”. The main inclusion criteria analyzed in this article are workload, detection and recall rates, and area under curve (AUC)  for malignant architectural distortion (MAD). Articles published before 2020, involving alternative imaging methods and overlapping studies were excluded. PRISMA guidelines were used for data abstractization.
+
+Results
+The results were assessed in 18 studies selected by abstract. Hernström et al (2025) evaluated that using AI-supported screening results in 44.2% reduction in the screen-reading workload. Chang et al (2025) mentioned that the cancer detection rates of breast radiologist with AI-based-computer-aided detection (CAD) was significantly higher by 13.8% compared to BRs without AI-CAD (95% CI=4.13-5.89, p<0.001), while no significant change in recall rates was observed.  Furthermore, Wan et al (2022) reported that the AUC values for MAD were 0.733 (95%CI=0.673-0.792) for general radiologist (Reader First-1) and 0.875 (95%CI=0.830-0.919) for breast radiologist (Reader Second-1), compared to 0.880 (95%CI=0.793-0.968) AI+Reader First-1 and 0.893 (95%CI=0.809-0.976) AI+Reader Second-1. 
+
+Conclusion
+In conclusion, AI-assisted mammography combined with human reading offers a safe and feasible alternative. Further studies are necessary to ensure its successful integration into routine screening programs.
+
+Author
+------
+Alexandra - Georgiana Coadă <alexandra-georgiana.coada2022@stud.umfcd.ro> (Faculty of Medicine,
+”Carol Davila” University of Medicine and Pharmacy, Bucharest, Romania)
+
+Abstract references (optional)
+------------------------------
+1. Eisemann N, Bunk S, Mukama T, Baltus H, Elsner SA, Gomille T, et al. Nationwide real-world implementation of AI for cancer detection in population-based mammography screening. Nat Med [Internet]. 2025 Jan 7;31(3):917–24. Available from: http://dx.doi.org/10.1038/s41591-024-03408-6
+
+2. Zhang XM, Zhou HJ, Chen Q, Wang X, Fu YJ, Jin C, et al. Development and validation of an artificial intelligence system for triple-negative breast cancer identification and prognosis prediction: a multicentre retrospective study. eClinicalMedicine [Internet]. 2025 Nov;89:103557. Available from: http://dx.doi.org/10.1016/j.eclinm.2025.103557
+
+3. Verburg E, van Gils CH, van der Velden BHM, Bakker MF, Pijnappel RM, Veldhuis WB, et al. Validation of Combined Deep Learning Triaging and Computer-Aided Diagnosis in 2901 Breast MRI Examinations From the Second Screening Round of the Dense Tissue and Early Breast Neoplasm Screening Trial. Invest Radiol [Internet]. 2022 Oct 17;58(4):293–8. Available from: http://dx.doi.org/10.1097/RLI.0000000000000934
+
+4. Hickman SE, Payne NR, Black RT, Huang Y, Priest AN, Hudson S, et al. Mammography Breast Cancer Screening Triage Using Deep Learning: A UK Retrospective Study. Radiology [Internet]. 2023 Nov 1;309(2). Available from: http://dx.doi.org/10.1148/radiol.231173
+
+5. Hickman SE, Payne NR, Black RT, Huang Y, Priest AN, Hudson S, et al. Deep Learning Algorithms for Breast Cancer Detection in a UK Screening Cohort: As Stand-alone Readers and Combined with Human Readers. Radiology [Internet]. 2024 Nov 1;313(2). Available from: http://dx.doi.org/10.1148/radiol.233147
+
+6. Elhakim MT, Stougaard SW, Graumann O, Nielsen M, Gerke O, Larsen LB, et al. AI-integrated Screening to Replace Double Reading of Mammograms: A Population-wide Accuracy and Feasibility Study. Radiology: Artificial Intelligence [Internet]. 2024 Nov 1;6(6). Available from: http://dx.doi.org/10.1148/ryai.230529
+
+7. Choi WJ, An JK, Woo JJ, Kwak HY. Comparison of Diagnostic Performance in Mammography Assessment: Radiologist with Reference to Clinical Information Versus Standalone Artificial Intelligence Detection. Diagnostics [Internet]. 2022 Dec 30;13(1):117. Available from: http://dx.doi.org/10.3390/diagnostics13010117
+
+8. Wan Y, Tong Y, Liu Y, Huang Y, Yao G, Chen DQ, et al. Evaluation of the Combination of Artificial Intelligence and Radiologist Assessments to Interpret Malignant Architectural Distortion on Mammography. Front Oncol [Internet]. 2022 Apr 20;12. Available from: http://dx.doi.org/10.3389/fonc.2022.880150
+
+9. Yamaguchi T, Koyama Y, Inoue K, Ban K, Hirokaga K, Kujiraoka Y, et al. Development of a deep learning-based automated diagnostic system (DLADS) for classifying mammographic lesions — a first large-scale multi-institutional clinical trial in Japan. Breast Cancer [Internet]. 2025 July 3;32(5):1115–24. Available from: http://dx.doi.org/10.1007/s12282-025-01741-3
+
+10. Nomani A, Ansari Y, Nasirpour MH, Masoumian A, Pour ES, Valizadeh A. PSOWNNs-CNN: A Computational Radiology for Breast Cancer Diagnosis Improvement Based on Image Processing Using Machine Learning Methods. Abdelaziz M, editor. Computational Intelligence and Neuroscience [Internet]. 2022 May 11;2022:1–17. Available from: http://dx.doi.org/10.1155/2022/5667264
+
+11. Jafari A. Machine-learning methods in detecting breast cancer and related therapeutic issues: a review. Computer Methods in Biomechanics and Biomedical Engineering: Imaging &amp; Visualization [Internet]. 2024 Jan 27;12(1). Available from: http://dx.doi.org/10.1080/21681163.2023.2299093
+
+12. Karthiga R, Narasimhan K, Amirtharajan R. Diagnosis of breast cancer for modern mammography using artificial intelligence. Mathematics and Computers in Simulation [Internet]. 2022 Dec;202:316–30. Available from: http://dx.doi.org/10.1016/j.matcom.2022.05.038
+
+13. Yoon JH, Kim EK. Deep Learning-Based Artificial Intelligence for Mammography. Korean J Radiol [Internet]. 2021;22(8):1225. Available from: http://dx.doi.org/10.3348/kjr.2020.1210
+
+14. Sung H, Ferlay J, Siegel RL, Laversanne M, Soerjomataram I, Jemal A, et al. Global Cancer Statistics 2020: GLOBOCAN Estimates of Incidence and Mortality Worldwide for 36 Cancers in 185 Countries. CA A Cancer J Clinicians [Internet]. 2021 Feb 4;71(3):209–49. Available from: http://dx.doi.org/10.3322/caac.21660
+
+15. Giaquinto AN, Sung H, Newman LA, Freedman RA, Smith RA, Star J, et al. Breast cancer statistics 2024. CA A Cancer J Clinicians [Internet]. 2024 Oct;74(6):477–95. Available from: http://dx.doi.org/10.3322/caac.21863
+
+16. Chang YW, Ryu JK, An JK, Choi N, Park YM, Ko KH, et al. Artificial intelligence for breast cancer screening in mammography (AI-STREAM): preliminary analysis of a prospective multicenter cohort study. Nat Commun [Internet]. 2025 Mar 6;16(1). Available from: http://dx.doi.org/10.1038/s41467-025-57469-3
+
+17. Caldas FAA, Caldas HC, Henrique T, Jordão PHF, Fernandes-Ferreira R, Souza DRS, et al. Evaluating the performance of artificial intelligence and radiologists accuracy in breast cancer detection in screening mammography across breast densities. European Journal of Radiology Artificial Intelligence [Internet]. 2025 June;2:100013. Available from: http://dx.doi.org/10.1016/j.ejrai.2025.100013
+
+18. Hernström V, Josefsson V, Sartor H, Schmidt D, Larsson AM, Hofvind S, et al. Screening performance and characteristics of breast cancer detected in the Mammography Screening with Artificial Intelligence trial (MASAI): a randomised, controlled, parallel-group, non-inferiority, single-blinded, screening accuracy study. The Lancet Digital Health [Internet]. 2025 Mar;7(3):e175–83. Available from: http://dx.doi.org/10.1016/S2589-7500(24)00267-X
+
+Presenter First and Last Name:
+------------------------------
+Alexandra - Georgiana Coadă
+
+Keywords
+--------
+breast cancer, mammography, artificial intelligence
+
+Topic
+-----
+* Track 7 - Poster session
+
+Please indicate if there were any AI tools involved in the abstract preparation.
+--------------------------------------------------------------------------------
+<ul class="topict topict-long"><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22AI+tools+might+have+been+used+for+partial+text+generation%2C+e.g.%2C+summary%2C+conclusions%2C+etc.%22">AI tools might have been used for partial text generation, e.g., summary, conclusions, etc.</a></li></ul>
+
+
+Submission #21: Automating Adverse Event Extraction from EMA Summary of Product Characteristics
+===============================================================================================
+
+Abstract
+--------
+Background: Systematically extracting adverse event (AE) data from Summary of Product Characteristics (SmPC) documents is often necessary in exploring drug safety with computational means (e.g. for building QSAR models). The European Medicines Agency (EMA) makes available the SmPCs in a pdf format, which complicates this process. Inconsistent formatting (at least two different ways of structuring tables), multi-page tables, variable number of tables included in section 4.8, and varied terminology, combined with ambiguous frequency data, create significant barriers to reliable, large-scale (semi)automated analysis.
+Methods: We built a two‑stage extraction workflow in R that integrates table‑based and text‑based methods. Using the “tabulapdf” package, we first retrieved AE tables spanning multiple pages, automatically removed repeated headers, and merged fragmented tables. We then applied a rule‑driven text parser focused on 10 monoclonal‑antibody‑related AEs (anaphylaxis, cytokine release syndrome, angioedema, urticaria, rash, pyrexia, hypersensitivity, bronchospasm, hypotension, pruritus). The parser handles terminology variability through synonym mapping, prioritizes longer strings to avoid partial matches, and uses context‑sensitive frequency detection at both line-level and section-level frequency indicators. Frequencies are mapped to a standardized 0-6 scale (0=absent, 1=unknown frequency, 2-6=very rare to very common).
+Results: Outputs from the extraction tool are standardized, providing detailed metrics: frequency scores for each AE, aggregated counts of all AEs and serious cases (including anaphylaxis, cytokine release syndrome, and angioedema), and the peak frequency among reported AEs. The method is robust in processing nested tables, preserving the connection between frequencies and AEs despite line breaks, and correctly distinguishes between AEs that are absent from those with unreported frequencies. Performance validation challenges are addressed, alongside comparisons with available open-source and proprietary tools.
+Conclusions: The pipeline allows consistent and reproducible extraction of adverse event information from EMA SmPCs, supporting scalable comparative safety and pharmacovigilance analyses.
+
+Authors
+-------
+1. Robert Ancuceanu <robert.ancuceanu@umfcd.ro> (Carol Davila University of Medicine and
+   Pharmacy, Faculty of Pharmacy, 6 Traian Vuia Street, 020955, Sector 2, Bucharest, Romania)
+2. Doina Drăgănescu <doina.draganescu@umfcd.ro> (Carol Davila University of Medicine and
+   Pharmacy, Faculty of Pharmacy, 6 Traian Vuia Street, 020955, Sector 2, Bucharest, Romania)
+3. Bogdan Tamba <bogdan.tamba@umfiasi.ro> (Advanced Research and Development Center for
+   Experimental Medicine (CEMEX), “Grigore T. Popa” University of Medicine and Pharmacy,
+   University Street No. 16, 700115 Iasi, Romania; Department of Pharmacology, Clinical
+   Pharmacology and Algesiology, “Grigore T. Popa” University of Medicine and Pharmacy,
+   University Street No. 16, 700115 Iasi, Romania)
+
+Abstract references (optional)
+------------------------------
+Funding: This research was funded by a grant of the Ministry of Research, Innovation and Digitization, CNCS - UEFISCDI, project number PN-IV-P2–2.1-TE-2023–0879, within PNCDI IV and by a project under The Health Program (PS) 2021–2027, Policy Objective 1, Priority 5, project title ‘Development of translational research for vaccines, serums and other biological drugs - Acronym CANTAVAC 2.0’, SMIS code 326920.
+
+Presenter First and Last Name:
+------------------------------
+Robert Ancuceanu
+
+Keywords
+--------
+Automatic Extraction, R language, SmPC, tabulapdf, QSAR models
+
+Topic
+-----
+* Track 1 - Standardization and the Life Cycle of Medical Data: From Collection to Decision
+  Support
+
+Please indicate if there were any AI tools involved in the abstract preparation.
+--------------------------------------------------------------------------------
+<ul class="topict topict-long"><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22AI+tools+were+used+for+proofreading%22">AI tools were used for proofreading</a></li></ul>
+
+
+Submission #22: OPTIMIZING THE ECG DATA LIFECYCLE FOR HIGH-FIDELITY CLINICAL DECISION SUPPORT
+=============================================================================================
+
+Abstract
+--------
+OPTIMIZING THE ECG DATA LIFECYCLE FOR HIGH-FIDELITY CLINICAL DECISION SUPPORT
+
+Authors: Madalina-Elena Datcu1,2, Adrian Doloca1, Cristina Gena Dascalu1, Vasile Lucian Boiculese1, Mihaela Moscalu1
+1.Preventive Medicine and Interdisciplinarity Department, Faculty of Medicine, Grigore T. Popa University of Medicine and Pharmacy Iasi 
+2. Faculty of Electrical Engineering, Energetics and Applied Informatics, "Gheorghe Asachi" Technical University of Iasi, Romania – PhD Student
+
+Background
+The integrity of the medical data lifecycle is fundamentally contingent upon the signal fidelity established during the initial acquisition phase. In wearable cardiology, the transition from controlled clinical environments to ambulatory monitoring introduces significant signal degradation primarily caused by motion artifacts and skin-electrode interface instability. This research addresses the fundamental technical constraint of transduction noise, proposing a framework to ensure data integrity from initial collection to clinical decision support.
+Methods
+The study proposes a synergistic methodology to evaluate the integration of advanced biosensing materials—including dry, flexible, and textile-based electrodes—with adaptive signal processing architectures. The research focuses on how electrode morphology influences biopotential capture, with a priority on attenuating impedance variability. Furthermore, the framework incorporates real-time filtering algorithms specifically designed to suppress non-stationary noise, ensuring that extracted features accurately represent underlying cardiac physiology.
+Results
+Preliminary conceptual assessments and initial tests indicate that bio-adaptive sensing interfaces, when combined with context-aware processing, can significantly enhance the Signal-to-Noise Ratio (SNR). By targeting baseline wander and electromyographic interference at the hardware-software interface, high-fidelity extraction of pathological markers is achieved. These initial findings suggest that optimizing the acquisition layer leads directly to improved sensitivity in automated diagnostic tools.
+Conclusions
+Refining the front-end of the medical data lifecycle is essential for the scalability of digital health solutions. This study establishes a robust foundation for next-generation ECG monitoring systems. By prioritizing high-fidelity acquisition, the proposed framework enables more precise, real-time clinical decision-making within a digital-first healthcare infrastructure.
+
+Authors
+-------
+1. Madalina Elena DATCU <madalina.dtc@gmail.com> (Preventive Medicine and Interdisciplinarity
+   Department, Faculty of Medicine, Grigore T. Popa University of Medicine and Pharmacy Iasi)
+2. Adrian DOLOCA <adrian.doloca@umfiasi.ro> (Preventive Medicine and Interdisciplinarity
+   Department, Faculty of Medicine, Grigore T. Popa University of Medicine and Pharmacy Iasi)
+3. Cristina-Gena DASCALU <cdascalu_info@yahoo.com> (Preventive Medicine and Interdisciplinarity
+   Department, Faculty of Medicine, Grigore T. Popa University of Medicine and Pharmacy Iasi)
+4. Vasile Lucian BOICULESE <Lboiculese@gmail.com> (Preventive Medicine and Interdisciplinarity
+   Department, Faculty of Medicine, Grigore T. Popa University of Medicine and Pharmacy Iasi)
+5. Mihaela MOSCALU <moscalu.mihaela@gmail.com> (Preventive Medicine and Interdisciplinarity
+   Department, Faculty of Medicine, Grigore T. Popa University of Medicine and Pharmacy Iasi)
+
+Presenter First and Last Name:
+------------------------------
+Madalina Elena DATCU
+
+Keywords
+--------
+ECG signal, medical data lifecycle, wearable devices, signal processing
+
+Topic
+-----
+* Track 1 - Standardization and the Life Cycle of Medical Data: From Collection to Decision
+  Support
+
+Please indicate if there were any AI tools involved in the abstract preparation.
+--------------------------------------------------------------------------------
+<ul class="topict topict-long"><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22AI+tools+might+have+been+used+for+partial+text+generation%2C+e.g.%2C+summary%2C+conclusions%2C+etc.%22">AI tools might have been used for partial text generation, e.g., summary, conclusions, etc.</a></li></ul>
+
+
+Submission #24: Traceable and Reproducible 3D Magnetic Field Mapping for Data-Driven Magnetic
+Drug Targeting
+================================================================================================
+
+Abstract
+--------
+Background: Magnetic Drug Targeting (MDT) aims to localise drugs while minimising systemic toxicity in vascular disease, localised tumours, and site-specific inflammatory conditions. MDT safety and efficacy depend on accurate three-dimensional magnetic-field distributions and gradients governing particle transport, capture efficiency, and off-target exposure. Automated three-dimensional field mapping is often affected by motion-related uncertainties—such as scale errors, drift, misalignment, and load effects—leading to non-deterministic datasets and biased gradients that limit data reuse, interoperability, and reproducibility.
+Objective: To develop and describe an automated three-dimensional magnetic-field mapping infrastructure serving as a data acquisition and quality-assurance layer for MDT medical informatics workflows, delivering traceable, reproducible, analysis-ready magnetic-field inputs integrable into computational modelling, digital twin frameworks, and data-driven decision support systems.
+Methods: The workflow implements controlled, high-accuracy three-dimensional magnetic-field acquisition through coordinated motion control, optical referencing, and calibration under operational load. Laser-assisted positioning establishes repeatable spatial registration between the magnetic source and the field sensor, while automated motion execution ensures deterministic sampling over a predefined grid. Motion integrity is monitored through closed-loop feedback to detect scale deviations, tracking errors, and mechanical drift. Prior to acquisition, axis scaling and alignment are calibrated using optical reference markers to compensate for load-dependent uncertainties. Magnetic-field values are acquired at each sampling node via automated optical digitisation of a calibrated digital teslameter, followed by confidence scoring, unit normalisation, and structured logging to ensure traceability.
+Results: The workflow produces consistent, reproducible volumetric magnetic-field datasets enriched with provenance metadata and systematic quality-control indicators at acquisition. These datasets are suitable for downstream computational analysis and modelling.
+Conclusions: Data derived from the mapping infrastructure enable the training of deep learning surrogate models that approximate the relationships between magnet position, orientation, and magnetic-field distribution. Such proxy predictors reduce the need for repeated measurement campaigns, supporting efficient estimation of magnetic-field distributions and gradients for data-driven MDT applications.
+
+Authors
+-------
+1. Robert-Leonard Bernad <robibernad11@gmail.com> (Faculty of Automation and Computers,
+   Politehnica University Timişoara, Romania, Bulevardul Vasile Pârvan 2, Timișoara 300223)
+2. Radu Caragin-Crasovan <radu.caragin-crasovan@student.upt.ro> (Faculty of Automation and
+   Computers, Politehnica University Timişoara, Romania, Bulevardul Vasile Pârvan 2, Timișoara
+   300223)
+3. Lacrimioara Stoicu-Tivadar <lacramioara.stoicu-tivadar@upt.ro> (Faculty of Automation and
+   Computers, Politehnica University Timişoara, Romania, Bulevardul Vasile Pârvan 2, Timișoara
+   300223)
+4. Mihaela Crisan-Vida <mihaela.vida@upt.ro> (Faculty of Automation and Computers, Politehnica
+   University Timişoara, Romania, Bulevardul Vasile Pârvan 2, Timișoara 300223)
+5. Sandor Ianos Bernad <sandor.bernad@upt.ro> (Centre for Fundamental and Advanced Technical
+   Research, Romanian Academy Timisoara Branch, Romania, Mihai Viteazu 24, Timişoara, 300223)
+
+Presenter First and Last Name:
+------------------------------
+Robert-Leonard Bernad
+
+Keywords
+--------
+Medical informatics; magnetic drug targeting; reproducible measurements; magnetic field mapping; data quality; experimental standardisation
+
+Topic
+-----
+* Track 3 - The Impact of Data on Medical Decision-Making
+
+Please indicate if there were any AI tools involved in the abstract preparation.
+--------------------------------------------------------------------------------
+<ul class="topict topict-long"><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22There+were+no+AI+tools+used+in+the+process%22">There were no AI tools used in the process</a></li></ul>
+
+
+Submission #25: Automated Video-Based Surrogate Dose Estimation for Patient-Specific Magnetic
+Drug Targeting Using Time-Resolved Deposition Analysis
+================================================================================================
+
+Abstract
+--------
+Background: The efficacy of medication in MDT is related to the number of loaded magnetic particles at the target site. Accurate quantification of this deposited dose is important for assessing treatment effectiveness and safety, and for enabling patient-specific MDT planning and in silico modelling to emulate in vivo efficacy. Particle deposition is transient under vascular flow: particles first accumulate rapidly, then partially erode. Static or hand-selected frame acquisition does not account for these dynamics, reducing experimental realism and challenging the generation of patient-specific data.	
+Objective: To establish an automated, video-based experimental workflow that allows depiction of peak particle deposition and deposited drug dose with high time resolution and accuracy by generating structured datasets for virtual dose estimation, deep learning, and patient-specific MDT planning within digital twin concepts.
+Methods: The integrated medical-informatics pipeline includes a high-resolution multi-angle acquisition system with semi-automatic 3-axis magnetic positioning and synchronised views of a biologically relevant microvasculature structure. Time series of video streams are analysed using computer-vision techniques to segment deposition sites, extract quantitative image-derived data, and inform time-dependent deposition dynamics. These are combined to generate temporal deposition profiles, from which peak deposition is automatically detected. Areas from orthogonal projections of the deposits are integrated under the assumption of a specific geometric reconstruction to estimate 3D deposition volume, and mass (and, by inference, delivered dose) is obtained using calibration data. Annotated video frames, peak-deposition labels, magnet-position parameters, and temporal metadata are converted into structured learning-ready datasets for supervised deep learning and surrogate modelling.
+Results: The platform enables observer-independent, time-dependent estimation of the deposited drug amount and surrogate dose determination under dynamically flowing conditions. 
+Conclusions: The proposed platform supports patient-specific MDT planning, integration into digital twin models, and data-driven optimisation of magnetic drug targeting strategies by converting experimental video data into structured datasets.
+
+Authors
+-------
+1. Radu Cărăgin-Crașovan <radu.caragin-crasovan@student.upt.ro> (Faculty of Automation and
+   Computers, Politehnica University Timişoara, Romania, Bulevardul Vasile Pârvan 2, Timișoara
+   300223)
+2. Robert-Leonard Bernad <robibernad11@gmail.com> (Faculty of Automation and Computers,
+   Politehnica University Timişoara, Romania, Bulevardul Vasile Pârvan 2, Timișoara 300223)
+3. Lăcrămioara Stoicu-Tivadar <lacramioara.stoicu-tivadar@upt.ro> (Faculty of Automation and
+   Computers, Politehnica University Timişoara, Romania, Bulevardul Vasile Pârvan 2, Timișoara
+   300223)
+4. Mihaela Crișan-Vida <mihaela.vida@upt.ro> (Faculty of Automation and Computers, Politehnica
+   University Timişoara, Romania, Bulevardul Vasile Pârvan 2, Timișoara 300223)
+5. Sandor Ianoș Bernad <sandor.bernad@upt.ro> (Centre for Fundamental and Advanced Technical
+   Research, Romanian Academy Timisoara Branch, Romania, Mihai Viteazu 24, Timişoara, 300223)
+
+Presenter First and Last Name:
+------------------------------
+Radu Cărăgin-Crașovan
+
+Keywords
+--------
+Surrogate Dose Estimation; medical informatics; computer vision; deep learning; time-resolved data analysis; digital twins, patient-specific therapy
+
+Topic
+-----
+* Track 3 - The Impact of Data on Medical Decision-Making
+
+Please indicate if there were any AI tools involved in the abstract preparation.
+--------------------------------------------------------------------------------
+<ul class="topict topict-long"><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22There+were+no+AI+tools+used+in+the+process%22">There were no AI tools used in the process</a></li></ul>
+
+
+Submission #26: BIOMARKER-LED PREDICTIVE MODELLING AND RISK CLASSIFICATION IN PERSONALIZED
+MEDICINE
+================================================================================================
+
+Abstract
+--------
+BIOMARKER-LED PREDICTIVE MODELLING AND RISK CLASSIFICATION IN PERSONALIZED MEDICINE
+
+Mihaela Moscalu 1, Adrian Doloca 1, Cristina Gena Dascalu 1, Madalina-Elena Datcu 1,2, Vasile Lucian Boiculese 1
+
+1 Preventive Medicine and Interdisciplinarity Department, Faculty of Medicine, Grigore T. Popa University of Medicine and Pharmacy Iasi, Romania
+2 PhD Student – Faculty of Electrical Engineering, Energetics and Applied Informatics, "Gheorghe Asachi" Technical University of Iasi, Romania
+
+Background. Identifying predictive and prognostic factors is becoming pivotal in medical research, especially as scientific discoveries have led to an in-depth understanding of diseases and genetics, resulting in personalized therapy.
+As we gain a better understanding of aspects involved in disease processes, biomarkers of disease are identified, investigated either to predict the occurrence of an event (i.e. the occurrence of a complication, death or, conversely, positive outcomes including healing, improvement of symptoms, etc.), or to serve as targets for new therapeutic measures.
+Methods. The use of biomarkers in medical research aided the refinement of prediction models and the identification of how these biomarkers could improve the prediction model. The question remains how do we assess whether or how much a biomarker improves prediction of the event?
+Results. The important point to note is that a biomarker may be significantly associated with a disease outcome, but this does not necessarily imply that it improves the risk prediction of an event to occur or reclassifies patients into different risk categories.
+The objective of the present research study is to develop an improved predictive modelling and risk stratification tool to support clinical decision-making by integrating clinical variables and biomarkers.
+At the same time, the incremental prognostic value of each candidate biomarker in addition to clinical characteristics were evaluated. The performance of the prediction model developed based on risk scores was compared and the design validation, testing and implementation of predictive analysis algorithms were performed.
+Conclusions. The predictive performance was based on the evaluation of two characteristics: calibration and discrimination. With an increase in data complexity brought about by constant technological advancements, statistical methods play an increasingly important role in medical research and healthcare. A clear specification of the main scientific objectives is required to identify the most appropriate analysis methods to address the questions of interest.
+
+Authors
+-------
+1. Mihaela MOSCALU <moscalu.mihaela@gmail.com> (Preventive Medicine and Interdisciplinarity
+   Department, Faculty of Medicine, Grigore T. Popa University of Medicine and Pharmacy Iasi)
+2. Adrian DOLOCA <adrian.doloca@umfiasi.ro> (Preventive Medicine and Interdisciplinarity
+   Department, Faculty of Medicine, Grigore T. Popa University of Medicine and Pharmacy Iasi)
+3. Cristina Gena DASCALU <cristina.dascalu@umfiasi.ro> (Preventive Medicine and
+   Interdisciplinarity Department, Faculty of Medicine, Grigore T. Popa University of Medicine
+   and Pharmacy Iasi)
+4. Madalina-Elena DATCU <madalina.dtc@gmail.com> (Preventive Medicine and Interdisciplinarity
+   Department, Faculty of Medicine, Grigore T. Popa University of Medicine and Pharmacy Iasi)
+5. Vasile Lucian BOICULESE <lboiculese@gmail.com> (Preventive Medicine and Interdisciplinarity
+   Department, Faculty of Medicine, Grigore T. Popa University of Medicine and Pharmacy Iasi)
+
+Presenter First and Last Name:
+------------------------------
+Madalina-Elena DATCU
+
+Keywords
+--------
+predictive modelling, risk classification, biomarker, personalized medicine
+
+Topic
+-----
+* Track 6 - AI in Medicine: Turning Data into Predictions and Insights
+
+Please indicate if there were any AI tools involved in the abstract preparation.
+--------------------------------------------------------------------------------
+<ul class="topict topict-long"><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22There+were+no+AI+tools+used+in+the+process%22">There were no AI tools used in the process</a></li></ul>
+
+
+Submission #27: AI TOOLS AND METHODOLOGIES IN MEDICAL RESEARCH – A REVIEW
+===========================================================================
+
+Abstract
+--------
+AI Tools and Methodologies in Medical Research – A Review
+Background
+The growing volume and complexity of biomedical data have increased the need for advanced computational support in medical research. Artificial intelligence (AI) technologies have gained attention for their ability to process large datasets, identify complex patterns, and support knowledge discovery. AI-based approaches are increasingly applied across multiple stages of the medical research lifecycle, including data analysis, literature synthesis, and hypothesis generation. This study aims to explore current and emerging applications of AI tools in medical research, with a focus on their benefits, limitations, and implications for research practice.
+Methods
+A structured exploratory literature review was conducted using major bibliographic databases, including PubMed, Scopus, and Web of Science. Search strategies combined AI-related terms (e.g., machine learning, deep learning, natural language processing, large language models) with medical research activities. Studies were selected based on predefined inclusion and exclusion criteria, focusing on AI tools that support medical research processes rather than direct clinical decision-making. Data were extracted using a standardized framework capturing AI tool types, research contexts and reported outcomes or limitations. Applications were categorized according to stages of the research lifecycle, and a qualitative synthesis was performed with attention to transparency and ethical considerations.
+Results
+The review identified a broad range of AI applications across medical research activities. AI methods were most frequently used for data analysis and interpretation, including pattern recognition, feature extraction, and predictive modeling. Significant use was also observed in literature-related tasks such as automated screening, summarization, and evidence synthesis. Reported benefits included improved efficiency and scalability, while recurring challenges involved transparency, data quality, reproducibility, and ethical concerns.
+Conclusions
+AI tools show substantial potential to enhance medical research efficiency and analytical capacity, but their effective adoption requires standardized evaluation frameworks, clear methodological guidance, and appropriate governance structures.
+
+Authors
+-------
+1. Adrian Doloca <adrian.doloca@umfiasi.ro> (Universitatea de Medicina și Farmacie "Grigore T.
+   Popa" Iași)
+2. Vasile Lucian Boiculese <vasile.boiculese@umfiasi.ro> (Universitatea de Medicina și Farmacie
+   "Grigore T. Popa" Iași)
+3. Mădălina-Elena Datcu <madalina-elena.datcu@umfiasi.ro> (Universitatea de Medicina și Farmacie
+   "Grigore T. Popa" Iași)
+4. Mihaela Moscalu <mihaela.moscalu@umfiasi.ro> (Universitatea de Medicina și Farmacie "Grigore
+   T. Popa" Iași)
+5. Oana Țănculescu <oana.tanculescu@umfiasi.ro> (Universitatea de Medicina și Farmacie "Grigore
+   T. Popa" Iași)
+
+Presenter First and Last Name:
+------------------------------
+Madalina Elena Datcu
+
+Keywords
+--------
+Ai, medical research, data analysis
+
+Topic
+-----
+* Track 6 - AI in Medicine: Turning Data into Predictions and Insights
+
+Please indicate if there were any AI tools involved in the abstract preparation.
+--------------------------------------------------------------------------------
+<ul class="topict topict-long"><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22AI+tools+were+used+for+proofreading%22">AI tools were used for proofreading</a></li></ul>
+
+
+Submission #28: Classification of sleep stages from EEG data
+============================================================
+
+Abstract
+--------
+Background: Manual sleep staging from electroencephalography (EEG) is time-consuming and affected by inter-scorer variability. Automated sleep stage classification can support clinical workflows if it generalizes across subjects, remains computationally feasible, and provides reliable probability estimates suitable for downstream decision-making.
+
+Methods: I developed a reproducible pipeline for classifying 30-second EEG epochs into W, N1, N2, N3, and REM using open sleep datasets. The pipeline standardizes preprocessing (epoching, normalization, and optional filtering), enforces subject-wise train/validation/test splits to evaluate generalization to unseen individuals, and reports accuracy, macro-F1, and Cohen’s kappa alongside confusion matrices and per-class metrics. Five approaches were implemented and compared: (1) feature-based classical machine learning (logistic regression, support vector machines, random forests); (2) a 1D convolutional neural network (CNN) trained on raw epochs; (3) a context-aware CNN–BiLSTM model that combines per-epoch embeddings with bidirectional temporal modeling; (4) a sequence-to-sequence encoder–decoder with attention to jointly label consecutive epochs; and (5) Hidden Markov Model post-processing to smooth predictions and penalize physiologically implausible transitions. Reliability was assessed via probability calibration analyses.
+
+Results: The pipeline produces consistent, subject-wise comparable evaluations across model families and enables analysis of typical failure modes (e.g., confusion between adjacent stages). Comparative experiments quantify trade-offs between feature-based and end-to-end models, short-context and long-context temporal modeling, and the effect of HMM smoothing and calibration on temporal consistency and reliability.
+
+Conclusions: A structured, reproducible evaluation framework clarifies how architectural choices and post-processing influence accuracy, generalization, and reliability in EEG-based sleep staging, supporting evidence-based selection of models for medical-informatics applications.
+
+Author
+------
+Iulia Maria Gheju <iulia.gheju00@e-uvt.ro> (Computer Science Department, Faculty of Computer
+Science, West University of Timișoara, Bd. Vasile Pârvan 4, 300223, Timișoara, Timiș,
+Romania)
+
+Presenter First and Last Name:
+------------------------------
+Iulia Maria Gheju
+
+Keywords
+--------
+Automatic sleep staging; EEG; deep learning; sequence modeling; subject-wise evaluation; medical informatics
+
+Topic
+-----
+* Track 3 - The Impact of Data on Medical Decision-Making
+
+Please indicate if there were any AI tools involved in the abstract preparation.
+--------------------------------------------------------------------------------
+<ul class="topict topict-long"><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22AI+tools+might+have+been+used+for+partial+text+generation%2C+e.g.%2C+summary%2C+conclusions%2C+etc.%22">AI tools might have been used for partial text generation, e.g., summary, conclusions, etc.</a></li></ul>
+
+
+Submission #29: Analysis of opportunity in novel medical research ideas using AI systems
+========================================================================================
+
+Abstract
+--------
+This project and paper present a system for automated analysis of medical research articles, designed to support literature triage and the identification of potentially high-opportunity research topics. The rapid growth of medical publications makes it difficult for researchers and students to keep up with emerging domains, distinguish mature areas from underexplored ones, and justify topic selection with evidence.
+The proposed project implements an end-to-end pipeline that ingests scientific article metadata, extracts core bibliographic and textual fields (title, authors, abstract, keywords), and stores the results in a structured database to enable downstream analytics. On top of this extraction layer, the system provides topic aggregation and ranking: extracted keywords and terms are normalized and grouped into candidate topics, which are then scored using a configurable “topic opportunity” function. The scoring is designed to balance signals of research saturation (e.g., publication volume within a topic) against signals of impact (e.g., citation-derived prominence, when citation data is available), allowing users to prioritize topics that appear influential yet comparatively less crowded. The architecture is modular so that extraction, normalization, topic grouping and scoring components can be swapped or tuned for different subfields or data availability constraints.
+The paper focuses on system design, reproducibility, and practical integration into a student, researcher or lab workflow, including transparent configuration of scoring weights and auditable intermediate outputs (extracted metadata, normalized terms, and per-topic feature values). The project aims to serve as a foundation for evidence-assisted topic selection, systematic review preparation and research landscape exploration in medical informatics.
+
+Authors
+-------
+1. Raul-Mihai Rădulescu <raul.radulescu00@e-uvt.ro> (West University of Timisoara)
+2. Maia Marin <maia.marin94@e-uvt.ro> (West University of Timisoara)
+3. Mark Dragotă <mark.dragota05@e-uvt.ro> (West University of Timisoara)
+4. Izabella Hanos <izabella.hanos04@e-uvt.ro> (West University of Timisoara)
+5. Catalin-Andrei Chirita <catalin.chirita99@e-uvt.ro> (West University of Timisoara)
+6. Sebastian-Aurelian Stefaniga <sebastian.stefaniga@e-uvt.ro> (West University of Timisoara)
+
+Presenter First and Last Name:
+------------------------------
+Raul-Mihai Radulescu
+
+Keywords
+--------
+Medical Informatics, Literature Mining, Information Extraction, Topic Ranking, Bibliometrics, Reproducible Pipelines
+
+Topic
+-----
+* Track 6 - AI in Medicine: Turning Data into Predictions and Insights
+
+Please indicate if there were any AI tools involved in the abstract preparation.
+--------------------------------------------------------------------------------
+<ul class="topict topict-long"><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22AI+tools+might+have+been+used+for+partial+text+generation%2C+e.g.%2C+summary%2C+conclusions%2C+etc.%22">AI tools might have been used for partial text generation, e.g., summary, conclusions, etc.</a></li></ul>
+
+
+Submission #30: Assessing the impact of artificial intelligence on medical equipment and
+healthcare technology management
+================================================================================================
+
+Abstract
+--------
+The accelerated integration of Artificial Intelligence (AI) into healthcare systems has significantly transformed the design, functionality, and management of medical devices. AI-powered medical devices are increasingly being used in clinical settings to improve diagnostic accuracy, support continuous real-time monitoring, and enable predictive maintenance strategies. Through advanced data analytics and machine learning algorithms, these technologies help improve clinical outcomes while simultaneously increasing the operational efficiency of healthcare organizations. As a result, AI has become a critical component in the evolution of modern medical devices and medical technology management. Despite the considerable benefits associated with the adoption of AI, the implementation of AI-powered medical devices also introduces complex challenges for medical technology management. Key concerns include ensuring patient safety, maintaining compliance with evolving regulatory frameworks, and managing the entire lifecycle of AI-powered devices, from procurement and deployment to maintenance and decommissioning. This study uses a mixed-methods research approach, combining a structured review of the scientific literature with a qualitative analysis of current practices in medical technology management. Findings indicate that integrating AI into medical equipment leads to improved operational performance, reduced unplanned equipment downtime through predictive maintenance, and improved clinical decision support capabilities. In addition, AI-based analytics support evidence-based purchasing decisions and optimize the use of medical equipment within healthcare institutions. However, significant barriers remain, including issues related to data quality, algorithmic transparency, cybersecurity vulnerabilities, and the need for continuous performance monitoring and validation of AI systems. Addressing these challenges is essential to ensure the safe, efficient, and sustainable integration of AI into medical equipment and medical technology management.
+
+Author
+------
+Calin Corciova <calin.corciova@umfiasi.ro> ("Grigore T. Popa" University of Medicine and
+Pharmacy Iasi, Medical Bioengineering Faculty)
+
+Presenter First and Last Name:
+------------------------------
+Calin Corciova
+
+Keywords
+--------
+artificial intelligence, medical equipment, healthcare technology management, technology lifecycle management, predictive maintenance
+
+Topic
+-----
+* Track 7 - Poster session
+
+Please indicate if there were any AI tools involved in the abstract preparation.
+--------------------------------------------------------------------------------
+<ul class="topict topict-long"><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22There+were+no+AI+tools+used+in+the+process%22">There were no AI tools used in the process</a></li></ul>
+
+
+Submission #31: Spatial and Temporal Patterns in Type 2 Diabetes Dynamics in Romania – A 10-year
+Time Series Study
+================================================================================================
+
+Abstract
+--------
+Background: The study analyzes the temporal and spatial evolution of type 2 diabetes prevalence in Romanian counties over a 10-year period (2012-2021), based on the time series autocorrelation and cross-correlation coefficients. 
+Methods: The database used in our analysis was extracted from a report achieved by the National Institute of Public Health in 2022, regarding the Type 2 Diabetes Evolution Evidence in Romania, between 2012-2021 (insp.gov.ro). The autocorrelation coefficients were calculated within each county’s data series, in order to identify the internal temporal dependencies, and the cross-correlation coefficients were calculated on administrative regions, in order to identify epidemiological patterns. The calculations were made in SPSS 29.0 and Microsoft Excel.
+Results: The type 2 diabetes prevalences in most counties follow autoregressive series, with significant positive correlations at lag 1, indicating cyclical fluctuations. Cross-correlation analysis revealed 3 regional patterns: North-East and West regions showed a highly synchronized dynamics with cross-correlations exceeding 0.9; South-East and South regions showed mixed synchronization, with temporal lags of 1–2 years between counties, while the other regions (Center, South-West and North-West) revealed a synchronized core and an isolated county, with atypical dynamics (e.g., Cluj, Alba, Mehedinți, Ialomița). These findings highlight the utility of time series analysis in understanding the specificity of such data and their practical applicability in customizing the required public health interventions.
+
+Authors
+-------
+1. Cristina-Gena DASCALU <cdascalu_info@yahoo.com> (Preventive Medicine and Interdisciplinarity
+   Department, Faculty of Medicine, Grigore T. Popa University of Medicine and Pharmacy Iasi)
+2. Lucian Vasile Boiculese <lucian.boiculese@umfiasi.ro> (Preventive Medicine and
+   Interdisciplinarity Department, Faculty of Medicine, Grigore T. Popa University of Medicine
+   and Pharmacy Iasi)
+3. Mihaela Moscalu <mihaela.moscalu@umfiasi.ro> (Preventive Medicine and Interdisciplinarity
+   Department, Faculty of Medicine, Grigore T. Popa University of Medicine and Pharmacy Iasi)
+4. Madalina Datcu <madalina.datcu@umfiasi.ro> (Preventive Medicine and Interdisciplinarity
+   Department, Faculty of Medicine, Grigore T. Popa University of Medicine and Pharmacy Iasi)
+5. Magda Ecaterina Antohe <magda.antohe@umfiasi.ro> (Implantology and Prosthetic Implant
+   Rehabilitation Department, Faculty of Dental Medicine, Grigore T. Popa University of Medicine
+   and Pharmacy Iasi)
+
+Presenter First and Last Name:
+------------------------------
+Cristina Gena Dascalu
+
+Keywords
+--------
+time series analysis; autocorrelation; cross-correlation; type 2 diabetes; epidemiology; Romania
+
+Topic
+-----
+* Track 3 - The Impact of Data on Medical Decision-Making
+
+Please indicate if there were any AI tools involved in the abstract preparation.
+--------------------------------------------------------------------------------
+<ul class="topict topict-long"><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22There+were+no+AI+tools+used+in+the+process%22">There were no AI tools used in the process</a></li></ul>
+
+
+Submission #32: Laboratory informatics Artificial intelligence-based quality control: reagent
+validation models, drift detection and nonconformance prevention in transfusion tests.
+================================================================================================
+
+Abstract
+--------
+The quality and reliability of reagents used in transfusion testing is of great importance to patient safety and laboratory accuracy. The traditional methods of quality control, based on the main use of fixed rules and periodic checks, might not be viable in detecting gradual performance drift or initial systematic deviations in reagent behaviour. The paper summarizes the types of models that can be used in artificial intelligence assisted quality control of transfusion laboratory informatics and makes a specialized discussion on sequential statistical monitoring techniques to verify the reagents and detect drift. The description of rule-based, statistical, and data driven quality control models is developed first to give a picture of the wider picture of quality assurance using informatics. Thereafter, detail is provided on Exponentially Weighted Moving Average (EWMA) and Cumulative Sum (CUSUM) models as early-warning methods of identifying a slow and long-term change in reagent performance. The discussion covers the model inputs, the logic of generating alerts, the evaluation metrics, and its practical implementation in the laboratory information systems. By using EWMA and CUSUM, it is possible to recognize reagent-related drift earlier than using the traditional quality control procedures, and thus the nonconformances can be investigated and prevented in time. These models are very appropriate in the daily use of transfusion testing settings since they are easily interpretable and can be used to meet the requirements of risk based laboratory governance. The combination of EWMA and CUSUM into the laboratory informatics systems therefore offers a sound, transparent, and safety-focused design of the artificial intelligence-assisted reagent quality control in transfusion medicine.
+
+Author
+------
+Florin-Petru Zlatovcen <florin.zlatovcen@gmail.com> (Universitatea de Vest din Timișoara)
+
+Presenter First and Last Name:
+------------------------------
+Zlatovcen Florin-Petru
+
+Keywords
+--------
+Transfusion medicine
+Laboratory informatics
+Quality control
+Reagent validation
+Drift detection
+EWMA
+CUSUM
+Patient safety
+
+Topic
+-----
+* Track 6 - AI in Medicine: Turning Data into Predictions and Insights
+
+Please indicate if there were any AI tools involved in the abstract preparation.
+--------------------------------------------------------------------------------
+<ul class="topict topict-long"><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22It+is+AI+generated+text%22">It is AI generated text</a></li><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22AI+tools+were+used+for+proofreading%22">AI tools were used for proofreading</a></li><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22AI+tools+might+have+been+used+for+partial+text+generation%2C+e.g.%2C+summary%2C+conclusions%2C+etc.%22">AI tools might have been used for partial text generation, e.g., summary, conclusions, etc.</a></li></ul>
+
+
+Submission #36: The Opinion of the General Romanian Population on Introducing an AI-powered
+Medical Data Collector
+================================================================================================
+
+Abstract
+--------
+Introduction
+Due to the continuous development of AI, many fields have sought to use AI-powered tools or applications to reduce time and costs and increase efficiency. This study raises the scenario of introducing an AI powered data collector in medical triage areas and how the general Romanian population would perceive such a change.
+
+Materials and Methods
+This cross-sectional study was carried out among a random sample of 100 Romanian citizens, from a variety of different cities, the most prevalent demographic being women in the age range of 18-29 from the West of Romania, however the sample wasn't skewed towards that demographic. They were questioned on their AI usage and general experience when using AI tools, then were given a hypothetical scenario in which ER triage personnel were replaced with highly trained AI, and addressed questions regarding how they perceive the scenario. The participants were also informed of their rights and that all data collected would remain anonymous. 
+
+Results
+The study shows that while opinions are varied, the majority were against the introduction of said AI-powered data collector and were distrustful of it. 44% of the sample reported to be uncomfortable with the idea, 46% reported that they didn’t consider their sensitive information would be safe, and 72% wouldn’t share private medical data with an AI. Using the chi-squared test(in JASP) we can also see that usage of AI strongly affects their opinion (p < .001), as the participants who use AI for personal reasons are either neutral or positive about the scenario, while those who don’t use AI or use it solely for academic purposes are negative and withdrawn at the idea.
+
+Author
+------
+Antonia-Romina Milak <antonia.milak@student.umft.ro> (Victor Babes University of Medicine and
+Pharmacy, 300041 Timisoara, Romania.)
+
+Abstract references (optional)
+------------------------------
+No references have been used.
+
+Presenter First and Last Name:
+------------------------------
+Antonia-Romina Milak
+
+Keywords
+--------
+Romania; AI; Data collection
+
+Topic
+-----
+* Track 1 - Standardization and the Life Cycle of Medical Data: From Collection to Decision
+  Support
+
+Please indicate if there were any AI tools involved in the abstract preparation.
+--------------------------------------------------------------------------------
+<ul class="topict topict-long"><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22There+were+no+AI+tools+used+in+the+process%22">There were no AI tools used in the process</a></li></ul>
+
+
+Submission #38: Nervous System Array like Organization
+======================================================
+
+Abstract
+--------
+Treating a certain organism like a system means, firstly, to consider the characteristics that systematically repeat in the behavior and structure of the respective organism. One of the main features of an evolved organism is the complexity of its nervous system. The nervous system controls, from the inside, the behavior of the organism. A control from the outside of the organism means mainly the control of its nervous system. To be able to control a system means, firstly, to have a model of that system as close to reality as possible. A mathematical approach in the modeling process is a beneficial way. From the mathematical point of view, it can be observed that there are a lot of features of the nervous system that can be modeled by arrays.
+To make an array-like mathematical model of a system means to give a mathematical representation to its components, considering them organized like arrays and considering the interactions of that system like array operations. Every mathematical representation must be certified first by theoretical experiments and then by practice. Having a correct model will permit an estimation of future behavior in certain situations. Considering the complexity of the nervous system, even assuming the interactions between its components, as array operations, could be an audacious step. Every assumption could be and will be sustained with arguments.
+
+Author
+------
+Mihai Popescu <popescu.mihai@hotmail.com> (Doctoral School of the Faculty of Electronics and
+Telecommunications National University of Science and Technology Polytechnica Bucharest,
+Bucharest, Romania, mihai.popescu65@stud.etti.upb.ro)
+
+Abstract references (optional)
+------------------------------
+1. G. H. Byrne, N. Dafny, “Neuroscience Online: An Electronic Textbook for the Neurosciences”, Department of Neurobiology and Anatomy, University of Texas Medical School at Houston, SUA, 1997, accessed 2023, available at: https://nba.uth.tmc.edu/neuroscience/
+2. BICK, Christian, et al. Understanding the dynamics of biological and neural oscillator networks through exact mean-field reductions: a review. The Journal of Mathematical Neuroscience, 2020, 10.1: 9
+3. Lane BJ, Samarth P, Ransdell JL, Nair SS, Schulz DJ. Synergistic plasticity of intrinsic conductance and electrical coupling restores synchrony in an intact motor network. Elife. 2016 Aug 23;5:e16879. doi: 10.7554/eLife.16879
+
+Presenter First and Last Name:
+------------------------------
+Mihai Popescu
+
+Keywords
+--------
+System, Neurons, Array, Operations, Structure
+
+Topic
+-----
+* Track 6 - AI in Medicine: Turning Data into Predictions and Insights
+
+Please indicate if there were any AI tools involved in the abstract preparation.
+--------------------------------------------------------------------------------
+<ul class="topict topict-long"><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22There+were+no+AI+tools+used+in+the+process%22">There were no AI tools used in the process</a></li></ul>
+
+
+Submission #39: A Frequency-Based Electroencephalography Approach to Real-Time Attention
+Detection
+================================================================================================
+
+Abstract
+--------
+The aim of this study was to develop and validate a frequency-based algorithm for estimating attention from electroencephalography (EEG) signals. Attention is a complex multi-dimensional cognitive process that is critical in task performance and learning. There are many approaches out there that oversimplify the way to measure it. This paper provides an algorithm that focuses on delivering stable attention metrics based on neural signals.
+Raw EEG signals were captured using a noninvasive 10–20 electrode configuration and preprocessed by removing the Direct Current (DC) component. This step ensures that minimal drifts are caused by physiological and environmental artifacts. Signals then are segmented into windows and converted into the frequency domain using Fast Fourier Transform (FFT). This provides a simultaneous analysis of band powers. Normalizing the ratio of the bands reduces the inter-individual variability to anatomy or electrode placement. To ensure real-time usability, an Exponential Moving Average (EMA) was used for smoothing and scaling the data into a standardized 0–100 range. Testing was then conducted on a sample of 10 healthy adults during a sustained attention task involving focused reading of a standardized text over a period of 5 minutes. Each participant’s comprehension of the text was then measured using a short 5 question test.
+Results demonstrate that among all electrodes, the FPZ showed the lowest variance between subjects and the highest stability in attention estimates after normalization and smoothing. The proposed algorithm produced consistent attention metrics across participants and proved to be stable despite signal noise and electrode placement variability.
+This study provides a solid method for assessing attention using EEG technology. Despite using a limited sample size, the results help identify the ideal electrode configuration. Future research will include validation on larger and more diverse populations.
+
+Authors
+-------
+1. Ioana Badiu <ioana.badiu@e-uvt.ro> (West University of Timisoara)
+2. Aurel Coruian <aurel.coruian02@e-uvt.ro> (West University of Timisoara)
+3. Alin Brindusescu <alin.brindusescu@e-uvt.ro> (West University of Timisoara)
+
+Presenter First and Last Name:
+------------------------------
+Ioana Badiu
+
+Keywords
+--------
+EEG-based attention, Brain–computer interfaces (BCI), Frequency-domain analysis, Cognitive focus metrics, Real-time neural signal processing
+
+Topic
+-----
+* Track 4 - Medical Data-Driven Solutions & Digital Tools
+
+Please indicate if there were any AI tools involved in the abstract preparation.
+--------------------------------------------------------------------------------
+<ul class="topict topict-long"><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22There+were+no+AI+tools+used+in+the+process%22">There were no AI tools used in the process</a></li></ul>
+
+
+Submission #40: A comparative analysis of the performance of Machine Learning Models in FAIR
+Health Data from Uganda, Africa
+================================================================================================
+
+Abstract
+--------
+The reuse and integration of health data remain limited due to lack of digitized data, poor data quality, lack of standardization, and restricted accessibility in Uganda and the rest of Africa. The FAIR data principles—Findability, Accessibility, Interoperability, and Reusability—provide a framework to address these challenges and present unrivalled opportunities for improving privacy preserving data analytics through machine learning applications in health research. 
+
+In this study, we investigate how the implementation of FAIR principles impact the performance, transparency and reproducibility of machine learning models applied to health data. Using paper-based health records and clinical data from Uganda, FAIRification processes such as digitization of paper records, use of standardized ontologies and semantic properties and metadata enrichment were applied prior to model development. The data sets used in this study are Outpatient Department (OPD) and integrated antenatal care (ANC) data registers from Uganda. Machine learning models were then trained to visualize and predict selected health outcomes and evaluated using task-relevant metrics such as silhouette scores for clustering algorithms, classification reports showing precision, recall, F1 score, and support for predictive models. In addition, accuracy scores are reported to provide an overall classification performance evaluation. Generation of visualizations that reveal patterns in FAIR OPD Uganda data patterns using K-Means clustering analyses, Anomaly detection among pregnant mothers using traditional Isolation Forest leveraging FAIR Antenetal care(ANC), FAIR ANC data Clustering analyses on determinants of pregnancy risk factors and fetal states using K-means clustering algorithm, and fetal state prediction modelling using the traditional K-Nearest Neigbors, Multi-Layer Perceptron, gradient boosting clustering algorithm, federated learning using Multi-Layer Perceptron, decision tree and Support Vector Machine algorithms.
+
+Traditional machine learning models, such as K-means clustering, multi-layer perceptron, K-nearest neighbor, and gradient boost, performed consistently well compared to federated learning. The findings demonstrate the significant improvement of model interpretability and cross study re-use when using FAIR data rather than paper format registers. FAIR data practices support ethical data access and compliance with data governance requirements which are vital in health contexts. This paper highlights the role of FAIR data as a critical foundation for robust and privacy preserving analytics using machine learning in health research.
+
+Authors
+-------
+1. Mariam Basajja <m.basajja@liacs.leidenuniv.nl> (Leiden Institute of Advanced Computer
+   Science, Leiden University)
+2. Katy Wolstencroft <k.j.wolstencroft@amsterdamumc.nl> (Amsterdam University Medical Center)
+3. Fons Verbeek <f.j.verbeek@liacs.leidenuniv.nl> (Leiden Institute of Advanced Computer
+   Science, Leiden University)
+
+Presenter First and Last Name:
+------------------------------
+Mariam Basajja
+
+Keywords
+--------
+FAIR data, outpatient register, antenatal care register, machine learning, federated learning
+
+Topic
+-----
+* Track 6 - AI in Medicine: Turning Data into Predictions and Insights
+
+Please indicate if there were any AI tools involved in the abstract preparation.
+--------------------------------------------------------------------------------
+<ul class="topict topict-long"><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22There+were+no+AI+tools+used+in+the+process%22">There were no AI tools used in the process</a></li></ul>
+
+
+Submission #42: Automated Detection of Coronary Artery Disease from Multiparametric Cardiac
+Magnetic Resonance Imaging Using Deep Learning
+================================================================================================
+
+Abstract
+--------
+Coronary artery disease (CAD) remains the most prevalent cardiovascular disorder and a leading cause of global morbidity and mortality. It is primarily driven by atherosclerotic plaque accumulation within the coronary arteries, resulting in impaired myocardial perfusion and potentially leading to ischemia, myocardial infarction, or sudden cardiac death. This study aimed to evaluate the performance of two deep convolutional neural network (CNN) architectures (DenseNet121 and ResNet50) for automated detection of CAD using multiparametric cardiac magnetic resonance (CMR) imaging.
+Model validation was performed using multiparametric CMR datasets (cine, T1 mapping, T2 mapping, and late gadolinium enhancement sequences) used as input for all training and evaluation procedures. Performance was assessed using a rigorous evaluation protocol consisting of 50 independent runs of 10 fold cross validation. Evaluation metrics included average classification accuracy (ACA), area under the receiver operating characteristic curve (AUC ROC), precision–recall AUC (PR AUC), and performance variability quantified by standard deviation.
+ResNet50 demonstrated superior performance and greater stability compared with DenseNet121, achieving an ACA of 92% (95% CI: 91–93%), an AUC ROC of 0.96 (95% CI: 0.95–0.97), and a PR AUC of 0.89 (95% CI: 0.87–0.91). In contrast, DenseNet121 achieved an ACA of 80% (95% CI: 78–82%) and an AUC ROC of 0.89 (95% CI: 0.87–0.91).
+These results indicate that ResNet50 consistently outperformed DenseNet121 across all validation metrics, with narrower confidence intervals reflecting greater robustness and reduced performance variability. The findings support the use of ResNet50 as a more reliable architecture for CAD detection from multiparametric CMR data. Given the clinical importance of early and accurate CAD identification—particularly for guiding timely intervention and risk stratification—these results highlight the potential of well validated deep learning models to enhance diagnostic workflows and support clinical decision making in cardiovascular imaging.
+
+Authors
+-------
+1. Daniel-Robert Stanescu <daniel.stanescu@umfcv.ro> (Doctoral School, University of Medicine
+   and Pharmacy of Craiova, Romania)
+2. Andrei-Florentin Băiaşu (Doctoral School, University of Medicine and Pharmacy of Craiova,
+   Romania)
+3. Mircea-Sebastian Şerbănescu (Department of Medical Informatics and Biostatistics, University
+   of Medicine and Pharmacy of Craiova, Romania)
+
+Presenter First and Last Name:
+------------------------------
+Mircea-Sebastian Şerbănescu
+
+Keywords
+--------
+Coronary artery disease, CMR, deep learning, ResNet50
+
+Topic
+-----
+* Track 6 - AI in Medicine: Turning Data into Predictions and Insights
+
+Please indicate if there were any AI tools involved in the abstract preparation.
+--------------------------------------------------------------------------------
+<ul class="topict topict-long"><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22There+were+no+AI+tools+used+in+the+process%22">There were no AI tools used in the process</a></li></ul>
+
+
+Submission #43: Measles Outbreak Prediction Using Machine Learning Models: A Regional
+Surveillance Study from South-West Romania
+================================================================================================
+
+Abstract
+--------
+Measles remains a major public health concern in Eastern Europe, despite the availability of effective vaccination programs. This study aimed to evaluate the applicability of machine learning models for case-level classification and prediction of measles outbreak dynamics using regional surveillance data from five adjacent counties in South-West Romania.
+A retrospective dataset provided by the Regional Center for Public Health Craiova was analyzed, comprising 625 confirmed measles cases reported in 2023 from Dolj, Vâlcea, Gorj, Mehedinți, and Olt counties. The dataset incorporated demographic variables (age, sex, residence type), temporal features (month, epidemic wave), and vaccination-related information (vaccination status, number of doses). Two supervised machine learning algorithms—Random Forest and Logistic Regression—were developed to classify cases as outbreak-associated versus sporadic, and 5-fold cross-validation was applied to assess model robustness and generalizability.
+Random Forest demonstrated superior predictive performance compared to Logistic Regression across all evaluation metrics. Random Forest achieved a mean accuracy of 84.4% (95% CI: 81.9–86.9%) and a ROC–AUC of 87.6% (95% CI: 85.1–90.1%), with sensitivity of 82.2% (95% CI: 78.0–86.4%) and specificity of 86.9% (95% CI: 83.2–90.6%). Logistic Regression showed moderate performance with accuracy of 79.0% (95% CI: 76.0–82.0%) and ROC–AUC of 79.0% (95% CI: 75.1–82.9%). The diagnostic odds ratio was substantially higher for Random Forest (36.0; 95% CI: 18.4–53.6) compared to Logistic Regression (16.2; 95% CI: 8.6–23.8), indicating stronger discriminative capacity. 
+These findings suggest that machine learning-based approaches can enhance epidemiological surveillance by providing reproducible, data-driven insights into measles transmission patterns, particularly in regions lacking robust real-time outbreak monitoring systems. Integrating such models into public health surveillance frameworks may improve early detection capabilities and support evidence-based decision-making in outbreak prevention and control.
+
+Authors
+-------
+1. Ana-Maria Boldea <calugaruanamaria11@yahoo.ro> (Doctoral School, University of Medicine and
+   Pharmacy of Craiova, Romania)
+2. Alexandra-Daniela Rotaru-Zavaleanu <alexandra.zavaleanu@gmail.com> (Department of
+   Epidemiology, University of Medicine and Pharmacy of Craiova, Romania)
+3. Andrei-Florentin Băiaşu (Doctoral School, University of Medicine and Pharmacy of Craiova,
+   Romania)
+4. Mircea-Sebastian Şerbănescu <mircea_serbanescu@yahoo.com> (epartment of Medical Informatics
+   and Biostatistics, University of Medicine and Pharmacy of Craiova, Romania)
+
+Presenter First and Last Name:
+------------------------------
+Ana-Maria Boldea
+
+Keywords
+--------
+Measles, machine learning, random forest
+
+Topic
+-----
+* Track 6 - AI in Medicine: Turning Data into Predictions and Insights
+
+Please indicate if there were any AI tools involved in the abstract preparation.
+--------------------------------------------------------------------------------
+<ul class="topict topict-long"><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22AI+tools+were+used+for+proofreading%22">AI tools were used for proofreading</a></li></ul>
+
+
+Submission #44: Heart Failure Prediction Using the XGBoost Supervised Learning Algorithm on a
+Generative AI Open Platform
+================================================================================================
+
+Abstract
+--------
+Heart Failure Prediction Using the XGBoost Supervised Learning Algorithm on a Generative AI Open Platform
+
+Sreerama Krupanidhi
+Vijaya Sai Residency, Chenchupeta Tenali 522202 A. P.  India 
+Email: sknbirac@gmail.com ; Mobile: +91 9440984668
+
+Background
+Lifestyle factors, dietary habits, physical inactivity, workplace stress, family disturbances, environmental pollution, traffic congestion, and lack of health awareness are major contributors reported for cardiovascular diseases.  They accounted approximately 85% of global deaths in 2022 (https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)). In this study, heart failure data obtained from the Kaggle dataset (https://www.kaggle.com) were used to identify potential predictive features. The dataset contains 12 features and 918 instances.
+
+Method
+The online XGBoost supervised learning algorithm was employed to evaluate the heart failure dataset using a tailored prompt. The obtained Decision Tree on the provided dataset demonstrated optimal performance, achieving an accuracy of 86.3% with minimal false positives and negatives.
+
+Results 
+Decision Tree metrics indicated Precision, Recall, and F1-score values of 0.889, 0.863, and 0.876 respectively, for the two classes (“no heart failure” and “heart failure”). The slightly lower precision suggests the presence of a few false positives, while the recall value indicates that the model effectively identifies high-risk individuals. The F1-score reflects a balanced combination of precision and sensitivity in detecting heart failure instances. Feature importance analysis using XGBoost identified the following four key risk predictors for heart failure among the twelve input features: MaxHR, Oldpeak, ST Slope and Cholesterol. These variables carry strong and complementary signals for predicting heart failure risk.
+
+Conclusion
+Overall, the XGBoost algorithm proved to be nearly optimal, with minimal misclassification between classes. It is therefore suitable for integration into clinical decision-support systems and demonstrates potential as a clinically interpretable predictive model.
+
+Author
+------
+Krupanidhi sreerama <sknbirac@gmail.com> (retired)
+
+Presenter First and Last Name:
+------------------------------
+Sreerama Krupanidhi
+
+Keywords
+--------
+Heart failure, Kaggle dataset, XGBoost algorithm, ChatGPT, Decision Tree evaluation metrics.
+
+Topic
+-----
+* Track 3 - The Impact of Data on Medical Decision-Making
+
+Please indicate if there were any AI tools involved in the abstract preparation.
+--------------------------------------------------------------------------------
+<ul class="topict topict-long"><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22There+were+no+AI+tools+used+in+the+process%22">There were no AI tools used in the process</a></li></ul>
+
+
+Submission #45: Liver Disease Prediction on the Dataset Using XGBoost classifier and Key Feature
+Insights
+================================================================================================
+
+Abstract
+--------
+Liver Disease Prediction on the Dataset Using XGBoost classifier and Key Feature Insights
+
+Sreerama Krupanidhi
+G-2; Vijayasai Residency, Chenchupet, Tenali 522202 A.P.  India
+Email: sknbirac@gmail.com; Mobile: 9440984668
+
+Background
+The present study focuses on the predictive modeling conducted using the Liver Patient Dataset, obtained from kaggle.com, comprising 30,691 patient records with demographic and biochemical parameters. The objective is to identify key laboratory and clinical features that are most predictive of liver disease, and to evaluate the diagnostic performance of an XGBoost (Extreme Gradient Boosting) classifier. 
+
+Method
+The dataset included 10 predictor variables. The target variable was coded as a binary outcome indicating presence or absence of liver disease. The dataset is divided into training and testing sets using an 80/20 stratified split. Model performance was assessed using AUC (Area Under the ROC Curve) and confusion matrix metrics.
+
+Results
+The model achieved AUC ≈ 0.99 with high sensitivity and specificity. The feature importance plot ranks predictors by their contribution to the model. The XGBoost model demonstrated excellent diagnostic capability to differentiate between liver disease and non-disease cases. The Confusion Matrix (threshold = 0.5) displayed: True Negatives:1750; False Positives:5; False Negatives:491; True Positives: 3893. The model achieved a specificity of 99.7%, indicating very low false-positive rates, and a sensitivity of 88.8%, demonstrating strong detection of true liver disease cases. The top predictive features, in descending order of importance, were: Direct Bilirubin > Total Bilirubin > ALT (Alanine Aminotransferase) > Alkaline Phosphatase (ALP) > Albumin > AST (Aspartate Aminotransferase) > Albumin/Globulin Ratio > Total Proteins > Age > Gender. 
+Conclusion
+The XGBoost model demonstrated exceptional performance in predicting liver disease using routine biochemical and demographic features. Direct bilirubin, total bilirubin, liver enzymes (ALT, AST, ALP), and protein-related measures emerged as the most influential predictors. These findings align closely with established clinical understanding of liver pathology and support the value of machine learning models in early detection and risk stratification of liver disease.
+
+Author
+------
+Krupanidhi sreerama <sknbirac@gmail.com> (retired)
+
+Presenter First and Last Name:
+------------------------------
+Sreerama Krupanidhi
+
+Keywords
+--------
+Liver disease prediction, XGBoost algorithm, Kaggle Dataset, Bilirubin, Liver Enzymes, Total proteins.
+
+Topics
+------
+* Track 3 - The Impact of Data on Medical Decision-Making
+* Track 6 - AI in Medicine: Turning Data into Predictions and Insights
+
+Please indicate if there were any AI tools involved in the abstract preparation.
+--------------------------------------------------------------------------------
+<ul class="topict topict-long"><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22There+were+no+AI+tools+used+in+the+process%22">There were no AI tools used in the process</a></li></ul>
+
+
+Submission #46: Artificial Intelligence for Polysomnographic Analysis: Clinical Validation,
+Technical Architecture and Real-World Implementation of Somnolyzer
+================================================================================================
+
+Abstract
+--------
+Health data form the foundation of modern medicine, yet their clinical value is determined by how effectively they are managed throughout the entire data lifecycle. From the collection of biomedical and physiological data to their transformation into actionable clinical insights, each stage introduces challenges related to data quality, standardization, interoperability, security, and interpretability. This presentation examines the health data lifecycle through the lens of advanced, AI-assisted analytics, using sleep monitoring as a representative use case.
+Key stages of the health data lifecycle are discussed, including multi-sensor data acquisition, data interoperability, preprocessing and artifact removal, extraction of clinically relevant features, AI-based automated analysis supported by clinically validated models, and the integration of results into clinical decision support systems. Particular emphasis is placed on clinical validation, algorithmic transparency, and data trustworthiness as prerequisites for the responsible use of artificial intelligence in healthcare.
+In addition, the presentation highlights the role of data governance, regulatory compliance, and real-world data in the development and deployment of health data analytics solutions. Emerging scenarios such as home-based monitoring and the analysis of incomplete or limited-sensor datasets are also addressed, underscoring the need for robust and adaptable data lifecycle frameworks. The conclusion emphasizes that a holistic, end-to-end approach to managing health data is essential for delivering safe, scalable, and patient-centered clinical decision support.
+
+Authors
+-------
+1. ARGINTENU ANDREEA-MARIA <andreea.arginteanu@csie.ase.ro> (Bucharest University of Economic
+   Studies)
+2. MANEA DANIELA-IOANA <DANIELA.MANEA@CSIE.ASE.RO> (Bucharest University of Economic Studies)
+3. Octavian Andronic <octavian.andronic@umfcd.ro> (University of Medicine and Pharmacy „Carol
+   Davila” Bucharest)
+
+Presenter First and Last Name:
+------------------------------
+ANDREEA MARIA ARGINTEANU
+
+Keywords
+--------
+Clinical Decision Support Systems, Data Quality and Standardization, Patient-Centered Digital Health
+
+Topic
+-----
+* Track 4 - Medical Data-Driven Solutions & Digital Tools
+
+Please indicate if there were any AI tools involved in the abstract preparation.
+--------------------------------------------------------------------------------
+<ul class="topict topict-long"><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22There+were+no+AI+tools+used+in+the+process%22">There were no AI tools used in the process</a></li></ul>
+
+
+Submission #47: Perception and Level of Acceptance of the General Population in Romania
+Regarding the Use of Wearable Devices for Health Monitoring
+================================================================================================
+
+Abstract
+--------
+Background:
+Wearable devices are increasingly promoted as tools for continuous health monitoring, disease prevention and patient empowerment. However, their successful implementation depends on population-level acceptance, digital literacy and perceived benefits and risks. This study aims to assess the perception and acceptance of wearable health devices among the general population in Romania.
+Methods:
+A questionnaire-based study was conducted using a 27-item instrument addressing demographics, digital behavior and familiarity with wearable devices, user experience, perceived advantages and disadvantages, acceptance and intention to use and potential interventions to increase adoption. Descriptive and correlational analyses were performed. Results are preliminary.
+Results:
+A high willingness to use wearable devices was observed, particularly for continuous health parameter monitoring (87.4%) and daily physical activity tracking (87.4%). Monitoring sleep quality (78.9%) and having easy access to personal health data (80.6%) were also highly valued functionalities. Wearable devices were perceived as beneficial for disease prevention (72.6%) and chronic disease management (71.4%).
+The main barriers to adoption included high cost (46.3%) and concerns regarding data accuracy (46.9%). Data privacy issues were reported as a moderate concern overall (35.4%), with female respondents exhibiting higher levels of concern compared to males (p=0.003). Limited battery autonomy and potential negative psychological effects associated with continuous monitoring were also identified as relevant constraints. Higher familiarity with wearable technologies and a greater willingness to use them were associated with urban residence (p<0.001).  Additionally, familiarity with recent medical innovations was significantly higher among respondents from urban areas, including those residing in Bucharest, compared to rural participants (p=0.020). 
+Conclusions:
+Preliminary results suggest a favorable perception and strong acceptance of wearable health devices, particularly for monitoring and preventive functions. Addressing economic, technical, and data protection concerns may further enhance adoption and support the integration of wearable technologies into digital health initiatives.
+
+Authors
+-------
+1. Clara-Maria Petcu <clara-maria.petcu0721@stud.umfcd.ro> (General Medicine Department, “Carol
+   Davila” University of Medicine and Pharmacy, Bd. Eroii Sanitari Nr. 8, 050474, Bucharest,
+   Romania)
+2. Andreea-Ramona Treteanu <andreea-ramona.treteanu0720@stud.umfcd.ro> (General Medicine
+   Department, “Carol Davila” University of Medicine and Pharmacy, Bd. Eroii Sanitari Nr. 8,
+   050474, Bucharest, Romania & Innovation and eHealth Center)
+3. Octavian Andronic <octavian.andronic@umfcd.ro> (General Medicine Department, “Carol Davila”
+   University of Medicine and Pharmacy, Bd. Eroii Sanitari Nr. 8, 050474, Bucharest, Romania &
+   Innovation and eHealth Center)
+4. Stefan Busnatu <stefan.busnatu@umfcd.ro> (General Medicine Department, “Carol Davila”
+   University of Medicine and Pharmacy, Bd. Eroii Sanitari Nr. 8, 050474, Bucharest, Romania &
+   Innovation and eHealth Center)
+
+Presenter First and Last Name:
+------------------------------
+Clara-Maria Petcu
+
+Keywords
+--------
+Wearable devices; Health monitoring; Population perception; Technology acceptance; Digital health
+
+Topic
+-----
+* Track 7 - Poster session
+
+Please indicate if there were any AI tools involved in the abstract preparation.
+--------------------------------------------------------------------------------
+<ul class="topict topict-long"><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22There+were+no+AI+tools+used+in+the+process%22">There were no AI tools used in the process</a></li></ul>
+
+
+Submission #48: From Medical Data to Sustainable and Equitable Health Decisions
+===============================================================================
+
+Abstract
+--------
+The increasing availability of medical data and the rapid development of artificial intelligence (AI) are transforming healthcare systems worldwide by enabling data-driven decision-making across the entire medical data lifecycle. This paper explores how medical data, from collection and processing to analysis and decision support, can contribute to sustainable and equitable health decisions. Particular attention is given to the economic and social impacts of AI-based health solutions, highlighting their potential to improve efficiency, optimize resource allocation, and support long-term health system sustainability. At the same time, the study examines disparities in access to data-driven healthcare technologies, especially in low- and middle-income countries, where limitations in infrastructure, governance, and international economic relations may hinder equitable adoption. Key challenges related to data quality, interoperability, ethics, and governance are discussed, emphasizing the risk of reinforcing existing inequalities if these issues are not adequately addressed. The paper concludes by underlining the importance of inclusive policies, international cooperation, and responsible data governance to ensure that medical data and AI-driven decision support systems foster both sustainability and equity in global health.
+
+Authors
+-------
+1. MANEA DANIELA-IOANA <DANIELA.MANEA@CSIE.ASE.RO> (Bucharest University of Economic Studies)
+2. PARASCHIV DOREL MIHAI <dorel.paraschiv@csie.ase.ro> (Bucharest University of Economic
+   Studies)
+3. POPESCU CATANESCU ANDREEA <andreea.catanescu1@ro.ibm.com> (Bucharest University of Economic
+   Studies)
+4. ARGINTEANU ANDREEA MARIA <arginteanu.andreea1@gmail.com> (Bucharest University of Economic
+   Studies)
+
+Presenter First and Last Name:
+------------------------------
+POPESCU CATANESCU ANDREEA
+
+Keywords
+--------
+Medical data lifecycle, Artificial intelligence in healthcare, Clinical decision support, Sustainable healthcare, Health equity
+
+Topic
+-----
+* Track 1 - Standardization and the Life Cycle of Medical Data: From Collection to Decision
+  Support
+
+Please indicate if there were any AI tools involved in the abstract preparation.
+--------------------------------------------------------------------------------
+<ul class="topict topict-long"><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22AI+tools+might+have+been+used+for+partial+text+generation%2C+e.g.%2C+summary%2C+conclusions%2C+etc.%22">AI tools might have been used for partial text generation, e.g., summary, conclusions, etc.</a></li><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22There+were+no+AI+tools+used+in+the+process%22">There were no AI tools used in the process</a></li></ul>
+
+
+Submission #49: Enhancing Medical Training with VR: Immersive Smoking Prevention Simulation
+===========================================================================================
+
+Abstract
+--------
+Background: Digital learning tools are increasingly adopted in medical education to support the development of communication and preventive counseling skills. While web-based simulations are accessible and easy to deploy, many of them provide a limited sense of realism, which may affect student involvement and the perceived usefulness of the learning experience.
+
+Methods: To address this limitation we developed and integrated a virtual reality (VR) interface into PaVIAGen, a web platform developed for training medical students in smoking prevention and patient communication. The technical architecture utilizes a first-person VR perspective that uses  Openai API to generate dynamic patient responses and synthesize the VR avatar's voice in real-time. Several scenarios were created, including non-smokers and smokers with different levels of motivation for behavior change. The VR component was designed to be compatible with the platform’s infrastructure, to preserve the scenario logic and counseling sequence.
+
+Results: The integration of the VR component enabled a more immersive experience when compared to the standard text-based simulation. From a functional perspective, the VR module allowed real-time practice of counseling strategies in a controlled environment. These characteristics support its use as an additional training modality within the platform, particularly for communication-focused educational objectives.
+
+Conclusions: The proposed VR interface represents a meaningful extension of web-based medical education platforms by combining immersive virtual environments with AI-driven dialogue systems. This approach shows potential to enhance experiential learning in preventive medicine, particularly for smoking prevention and health behavior change training.
+
+Authors
+-------
+1. Drd. Andrei-Călin Dragomir <andreidragomir1997@gmail.com> (University of Medicine, Pharmacy,
+   Science and Technology "George Emil Palade" of Târgu Mureș, 38 Gheorghe Marinescu Street
+   Tîrgu Mureș, 540139 România)
+2. Asist univ. Drd. Stoica-Buracinschi Florin <florin.stoica@umfst.ro> (Medical Informatics and
+   Biostatistics, University of Medicine, Pharmacy, Science and Technology "George Emil Palade"
+   of Târgu Mureș, 38 Gheorghe Marinescu Street Tîrgu Mureș, 540139 România)
+3. Prof. univ. Dr. Nădășan Valentin <vnadasan@gmail.com> (Department of Hygiene and
+   Environmental Health "George Emil Palade" University of Medicine, Pharmacy, Science, and
+   Technology of Targu Mures, 38 Gheorghe Marinescu Street Tîrgu Mureș, 540139 România)
+
+Presenter First and Last Name:
+------------------------------
+Andrei-Călin Dragomir
+
+Keywords
+--------
+Virtual Reality(VR) in medical education, AI-driven dialogue systems, Smoking prevention training, Preventive counseling, Health behavior change
+
+Topic
+-----
+* Track 4 - Medical Data-Driven Solutions & Digital Tools
+
+Please indicate if there were any AI tools involved in the abstract preparation.
+--------------------------------------------------------------------------------
+<ul class="topict topict-long"><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22AI+tools+were+used+for+proofreading%22">AI tools were used for proofreading</a></li></ul>
+
+
+Submission #50: Trustworthy Transformer Models for Thyroid Cancer Recurrence Prediction through
+Explanation Stability
+================================================================================================
+
+Abstract
+--------
+Background: Accurate prediction of postoperative recurrence in differentiated thyroid cancer (DTC) is important for risk stratification and follow-up planning. Beyond predictive performance, clinically useful models should also provide explanations that remain stable across training runs and plausible input variation. We therefore study DTC recurrence prediction with a Transformer-based tabular model and explicitly assess explanation stability as a criterion for trustworthy clinical AI.
+Methods: We used the public Differentiated Thyroid Cancer Recurrence dataset, including 383 patients described by 16 clinical and demographic variables, with binary recurrence status as the outcome variable (108 recurrence, 275 non-recurrence). Features were one-hot encoded and used to train a Transformer-based classifier, evaluated with stratified five-fold cross-validation. Explanations were generated with SHAP. To assess stability, the model was retrained with different random initializations and under small perturbations of numerical features simulating plausible clinical variability. Stability-aware feature selection retained variables with high explanatory importance and low cross-run variability, and the model was retrained on the reduced feature set.
+Results: The full model achieved a mean accuracy of 96.6%, with similarly strong macro-F1 performance across folds. SHAP analysis showed high consistency in feature rankings across repeated runs, with Spearman correlation coefficients approaching 1, indicating near-identical ordering of the most influential variables. Prediction outputs were minimally affected by small perturbations of numerical inputs, supporting robustness under realistic feature variation. The reduced model obtained through stability-aware feature selection preserved overall predictive performance and yielded slight improvements in some folds, while reducing input dimensionality and model complexity.
+Conclusions: Transformer-based tabular learning can support accurate prediction of postoperative recurrence in DTC while also providing highly reproducible post hoc explanations. Incorporating explanation stability into feature selection improves model parsimony without compromising predictive quality, thereby supporting the development of more transparent and trustworthy clinical decision support systems.
+
+Authors
+-------
+1. Flavia Costi <flavia.costi@e-uvt.ro> (Computer Science Department, Faculty of Computer
+   Science, West University of Timișoara, Bd. Vasile Pârvan 4, 300223, Timișoara, Timiș,
+   Romania)
+2. Ana Corlan <ana.corlan@umft.ro> (Endocrinology Department, University of Medicine and
+   Pharmacy, Piața Eftimie Murgu 2, 300041, Timișoara, Timiș, Romania)
+3. Emanuel Covaci <emanuel.covaci@e-uvt.ro> (Computer Science Department, Faculty of Computer
+   Science, West University of Timișoara, Bd. Vasile Pârvan 4, 300223, Timișoara, Timiș,
+   Romania)
+4. Darian Onchis <darian.onchis@e-uvt.ro> (Computer Science Department, Faculty of Computer
+   Science, West University of Timișoara, Bd. Vasile Pârvan 4, 300223, Timișoara, Timiș,
+   Romania)
+
+Abstract references (optional)
+------------------------------
+Sheemazain. Thyroid Disease Dataset [Internet]. Kaggle; 2025 [cited 2026 Feb 7]. Available from: https://www.kaggle.com/datasets/sheemazain/thyroid-disease-dataset
+
+Presenter First and Last Name:
+------------------------------
+Ana Corlan
+
+Keywords
+--------
+Explainable Artificial Intelligence; Transformer Models; Thyroid Cancer Recurrence
+
+Topic
+-----
+* Track 6 - AI in Medicine: Turning Data into Predictions and Insights
+
+Please indicate if there were any AI tools involved in the abstract preparation.
+--------------------------------------------------------------------------------
+<ul class="topict topict-long"><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22AI+tools+were+used+for+proofreading%22">AI tools were used for proofreading</a></li></ul>
+
+
+Submission #51: Physics-Informed Neural Networks for Robust Multiple Sclerosis Lesion Detection:
+Integrating Bloch-Based Pre-training
+================================================================================================
+
+Abstract
+--------
+Background: While the diagnosis of Multiple Sclerosis (MS) requires a combination of clinical history, physical examinations, and spinal tap results, Magnetic Resonance Imaging (MRI) plays a central and indispensable role in this assessment. Conventional MRI (cMRI) provides qualitative intensities varying across scanners, complicating automated detection. While quantitative MRI (qMRI) offers standardized biomarkers such as relaxation times (T_1, T_2), adoption is limited because of long acquisition times. Current state-of-the-art deep learning models often operate as ''black boxes'', failing to account for the physical principles of signal acquisition. To address these limitations, we proposed a Physics-Informed Neural Network (PINN) implementation. In this study, we benchmark the proposed PINN against current state-of-the-art (SoTA) implementations, such as nnU-Net, LST-AI, 2.5D Tiramisu, and modified Attention U-Nets, using the publicly available ISBI 2015 Longitudinal MS Lesion Challenge and MICCAI MSSEG-2 datasets.
+Methods: The proposed PINN integrates qMRI and cMRI for MS lesion detection through a two-stage 'Sim-to-Real' strategy. First, the network undergoes self-supervised pre-training using a differentiable MRI simulator. By leveraging Bloch-inspired approximations, we employ sequence-parameterized forward models to generate synthetic contrasts from quantitative maps, thereby forcing the encoder to learn robust, anatomy-centric features. Second, the model is fine-tuned for lesion segmentation using combined data with a physics-consistency loss.
+Results: Physics-informed pre-training significantly enhances the detection of subtle lesions that are typically masked by noise. Preliminary findings show gains of up to 8.3% in Dice scores in low-data settings and improved invariance to scanner-induced domain shifts.
+Conclusions: Integrating biophysical modeling with deep learning provides reliable, interpretable MS biomarkers. By enhancing the detection of subtle lesions and maintaining high performance in low-data regimes, this PINN framework offers a highly reliable tool for automated radiological assessment. Future work will aim to correlate these refined imaging biomarkers with clinical disability scores, paving the way to address the 'clinicoradiological paradox' in MS progression.
+
+Author
+------
+Mihai Cosmin Claudiu <cosmin.mihai02@e-uvt.ro> (Computer Science Department, Faculty of Computer
+Science, West University of Timișoara, Bd. Vasile Pârvan 4, 300223, Timișoara, Timiș,
+Romania)
+
+Abstract references (optional)
+------------------------------
+1. Jacobs L, Mandija S, Liu H, van den Berg CAT, Sbrizzi A, Maspero M. Generalizable synthetic MRI with physics-informed convolutional networks. Med Phys. 2024;51(5):3348-3359.
+
+2. Ahmadi M, Biswas D, Lin M, et al. Physics-informed machine learning for advancing computational medical imaging: integrating data-driven approaches with fundamental physical principles. Artif Intell Rev. 2025;58:297.
+
+3. Chalcroft L, Crinion J, Price CJ, Ashburner J. Domain-Agnostic Stroke Lesion Segmentation Using Physics-Constrained Synthetic Data. In: Gee JC, et al. Medical Image Computing and Computer Assisted Intervention – MICCAI 2025. Lecture Notes in Computer Science, vol 15963. Springer, Cham; 2026.
+
+4. Carass A, Roy S, Jog A, Cuzzocreo JL, Magrath E, Gherman A, et al. Longitudinal Multiple Sclerosis Lesion Segmentation Data Resource. Data in Brief. 2017;12:346-350.
+
+5. Commowick O, Cervenansky F, Cotton F, Dojat M. MSSEG-2 challenge proceedings: Multiple sclerosis new lesions segmentation challenge using a data management and processing infrastructure. 2021.
+
+6. Isensee F, Jaeger PF, Kohl SAA, et al. nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nat Methods. 2021;18:203–211.
+
+7. Alsayat A, Mostafa AM, Elmezain M, et al. RAUM-GANs: a multi-layer GAN-enhanced framework for accurate multiple sclerosis lesion segmentation in MRI. Sci Rep. 2025;15:43933.
+
+8. Zhang H, Valcarcel AM, Bakshi R, Chu R, Bagnato F, Shinohara RT, et al. Multiple Sclerosis Lesion Segmentation with Tiramisu and 2.5D Stacked Slices. Med Image Comput Comput Assist Interv. 2019;11766:338-346.
+
+9. Wiltgen T, McGinnis J, Schlaeger S, Kofler F, Voon C, Berthele A, et al. LST-AI: a Deep Learning Ensemble for Accurate MS Lesion Segmentation. Neuroimage Clin. 2024;42:103611.
+
+Presenter First and Last Name:
+------------------------------
+Mihai Cosmin Claudiu
+
+Keywords
+--------
+MS lesion, PINN, MRI, CNN
+
+Topic
+-----
+* Track 6 - AI in Medicine: Turning Data into Predictions and Insights
+
+Please indicate if there were any AI tools involved in the abstract preparation.
+--------------------------------------------------------------------------------
+<ul class="topict topict-long"><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22AI+tools+were+used+for+proofreading%22">AI tools were used for proofreading</a></li><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22AI+tools+might+have+been+used+for+partial+text+generation%2C+e.g.%2C+summary%2C+conclusions%2C+etc.%22">AI tools might have been used for partial text generation, e.g., summary, conclusions, etc.</a></li></ul>
+
+
+Submission #52: Deep Learning Architectures for Ultrasound Image Analysis: A Narrative Review
+=============================================================================================
+
+Abstract
+--------
+Background: Ultrasound is the main screening method used to detect various anatomical structures. Unlike other imaging techniques such as Magnetic Resonance Imaging (MRI) and Computed Tomography (CT) scanning, ultrasound is convenient, cheap, non-invasive, and can be used in real time. However, ultrasonic images present certain technical challenges, such as noise, low contrast, and overall image quality, which vary from patient to patient and physician to physician. These features led to the development of a special computer vision architecture adapted to the specific characteristics of the ultrasonic signals. 
+Methods: This narrative review examined 20 articles. The inclusion criteria required research to address deep learning architectures, specifically U-Net and YOLO based models. Articles were identified using keywords such as ultrasound, deep learning, medical imaging, and were selected primary research articles, starting with the most recent. The papers were organized into four themes: image segmentation, real-time detection, spatiotemporal analysis and preprocessing techniques, with a particular focus on cardiac ultrasound. 
+Results: At segmentation level, U-Net-based architectures have demonstrated their efficiency in defining anatomical structures, improving by up to 59% compared to conventional methods in data-limited scenarios. The YOLO model family has been adapted for medical tasks to identify cardiac structures and vascular pathologies with more than 80% accuracy. The transition from static images to video marks a fundamental paradigm shift, with performance improvements of up to 7% over existing models. Emerging solutions address two major challenges: lack of annotation data, addressed by knowledge distillation without real data, and image quality improved by noise reduction without clean reference images. 
+Conclusions: Deep learning has notably improved ultrasound image analysis through segmentation, detection and video understanding. Ongoing challenges include limited annotation datasets, cross-device generalization and computational limitations for edge deployment. Base models and data-efficient training strategies are the most promising directions for clinical translation.
+
+Authors
+-------
+1. Alexandru-Robert Farcaș <alexandru.farcas01@e-uvt.ro> (West University of Timisoara)
+2. Cosmin Bonchiș <cosmin.bonchis@e-uvt.ro> (West University of Timisoara)
+3. Sebastian-Aurelian Stefaniga <sebastian.stefaniga@e-uvt.ro> (West University of Timisoara)
+
+Presenter First and Last Name:
+------------------------------
+Alexandru-Robert Farcaș
+
+Keywords
+--------
+Ultrasound; Computer Vision; Segmentation; Image Processing; Deep Learning
+
+Topic
+-----
+* Track 6 - AI in Medicine: Turning Data into Predictions and Insights
+
+Please indicate if there were any AI tools involved in the abstract preparation.
+--------------------------------------------------------------------------------
+<ul class="topict topict-long"><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22AI+tools+were+used+for+proofreading%22">AI tools were used for proofreading</a></li></ul>
+
+
+Submission #53: Automated Breast Lesion Segmentation in Ultrasound Images Using Attention U-Net
+Architectures
+================================================================================================
+
+Abstract
+--------
+Background: In Romania, breast cancer remains the leading type of cancer and third cause of cancer-related deaths among women, according to the National Institute of Public Health (NIPH 2024). Consequently, breast cancer continues to be a major challenge in the Romanian healthcare system, making the early discovery of foreign masses within the internal breast tissue vital. This study aimed to implement an automated segmentation system for breast tumors to provide clinicians with precise, objective decision support, optimizing the oncological diagnostic workflow.
+Methods: The proposed research uses the open dataset available at Egyptian Breast Ultrasound Images (BUSI), comprising 780 ultrasound images categorized as normal, benign or malignant. Data was split using an 80/20 Pareto ratio for training and validation. To address class imbalance, where the lesion typically occupies less than 7% of the image area, an Attention U-Net architecture was implemented. This model employs "Attention Gates" to prioritize pathologically significant regions while suppressing acoustic noise from surrounding healthy tissue. The model was trained for 17 epochs, utilizing an early stopping strategy to prevent overfitting. Images were resized to 256x256, normalized, and subjected to data augmentation (rotation/zoom) to enhance model robustness and generalizability.
+Results: On the validation set, the system achieved a pixel-level accuracy of 98.29%. However, given the large background area, the Intersection over Union (IoU) score of 0.4909 (equivalent to a Dice Coefficient of 0.66) provides a more realistic measure of segmentation overlap. A key strength of the model is its intrinsic Explainable AI (XAI) capability; qualitative assessment of the internal Attention Maps demonstrates a precise spatial focus on the lesion core. By highlighting the specific features used for boundary delineation, the model provides a transparent decision-making process that aligns with morphological reasoning employed in clinical diagnostic protocols.
+Conclusions: Based on the achieved 98.29% accuracy and 0.4909 IoU, the integration of attention mechanisms into medical segmentation architectures effectively localizes lesions despite significant class imbalance. This approach allows for precise lesion localization and volumetric measurement, providing a highly scalable solution for high-volume clinical settings where expert radiologists may be overworked. By automating the contouring process, the system reduces human error and provides a standardized tool. Therefore, early-stage tumors can be identified more effectively, significantly increasing survival rates for women by facilitating timely medical intervention.
+
+Author
+------
+Ștefana Ivánik <stefana.ivanik06@e-uvt.ro> (Computer Science Department, Faculty of Computer
+Science, West University of Timișoara, Bd. Vasile Pârvan 4, 300223, Timișoara, Timiș,
+Romania)
+
+Abstract references (optional)
+------------------------------
+1. Al-Dhabyani W, Gomaa M, Khaled H, Fahmy A. Dataset of breast ultrasound images. Data in Brief. 2020.
+2. National Institute of Public Health (NIPH). Situation Analysis - Breast Cancer Awareness Month, October 2024.
+3. Oktay O, Schlemper J, Folgoc LL, et al. Attention U-Net: Learning Where to Look for the Pancreas. arXiv. 2018.
+
+Presenter First and Last Name:
+------------------------------
+Ștefana Ivánik
+
+Keywords
+--------
+Breast Cancer, Attention U-Net, Medical Image Segmentation, Class Imbalance, Explainable AI (XAI), Ultrasound Imaging
+
+Topic
+-----
+* Track 7 - Poster session
+
+Please indicate if there were any AI tools involved in the abstract preparation.
+--------------------------------------------------------------------------------
+<ul class="topict topict-long"><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22AI+tools+were+used+for+proofreading%22">AI tools were used for proofreading</a></li></ul>
+
+
+Submission #54: Ami: a Chatbot for Emotional Support in Romanian
+================================================================
+
+Abstract
+--------
+Background: Assistance for mental health-related issues remains largely inaccessible for many individuals. Factors such as economic stability, place of residence and even societal expectations play a crucial role in whether a person seeks or receives professional help. According to the "Don't let depression control your life! Your mental health matters!" campaign conducted by the National Institute of Public Health, untreated conditions such as anxiety, depression, and chronic stress can lead to social withdrawal, isolation, and deterioration in overall well-being.
+Methods: By implementing a multi-component system that offers functionalities such as diary, mood monitoring, relaxing music, games and an artificial intelligence-based chatbot, Ami supports users who hesitate to share the problems they face and their emotional state with others. The technology underlying the model will be selected based on the results obtained from testing the quality and relevance of the responses of several LLM models adapted to a Romanian dataset. The dataset contains a number of 384 filtered questions-answers divided equally into friendly and professional responses obtained from a public dataset, but also 150 questions-answers developed based on specialized literature in cognitive-behavioral therapy (CBT) adapted to the format. The question-answer set has been translated and culturally adapted to the Romanian context. The REST-based architecture proposes modern technologies such as FastAPI for the backend, PostgreSQL for the database and React Native and NativeWind for the frontend. Security is an important concept, being ensured by using OAuth2 with password and Bearer with JWT tokens.
+Results: Ami is designed to offer personalized support to its users. The anticipated outcome is a decrease in the level of depression and anxiety symptoms of Romanian users after engaging with the application. Unlike a regular assistance hotline, the Ami chatbot is available 24/7 and leverages natural language processing to deliver adaptive and context-aware responses through two modes, friendly and professional.
+Conclusions: Ami, a chatbot integrated into an AI-driven platform, provides adaptive responses in Romanian. The application is not designed to replace professional help, if suicidal risk is detected through risk detection mechanisms, the conversation ends and the user is provided with information about professional assistance.
+
+Authors
+-------
+1. Ana-Maria-Iasmina Gușcă <ana.gusca04@e-uvt.ro> (Faculty of Computer Science, West University
+   of Timișoara)
+2. Todor Ivașcu <todor.ivascu@e-uvt.ro> (Faculty of Computer Science, West University of
+   Timișoara)
+
+Presenter First and Last Name:
+------------------------------
+Ana-Maria-Iasmina Gușcă
+
+Keywords
+--------
+AI-driven Mental Health Support, Natural Language Processing (NLP), conversational AI, Cognitive Behavioral Therapy
+
+Topic
+-----
+* Track 6 - AI in Medicine: Turning Data into Predictions and Insights
+
+Please indicate if there were any AI tools involved in the abstract preparation.
+--------------------------------------------------------------------------------
+<ul class="topict topict-long"><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22There+were+no+AI+tools+used+in+the+process%22">There were no AI tools used in the process</a></li></ul>
+
+
+Submission #55: Pharmacological space mapping via Structure-Target relationship using layered
+SOMs
+================================================================================================
+
+Abstract
+--------
+Conventional methods often fail to solve the divergence between chemical structure and complex biological response, being a significant challenge in computational pharmacology. Consequently, there is a growing need for integrative models that surpass the limitations of traditional structure-activity analysis through multidimensional data fusion. Based on the premise that chemical and biological similarities capture distinct but complementary dimensions of drug mechanisms of action, we developed a dual-layer Self-Organizing Map (SOM) model. This architecture combines two complementary representations for 1,600 approved drugs: a binary chemical fingerprint that encodes each compound’s structure, and a continuous, biologically informed fingerprint derived through deep learning from target protein sequences.
+This hierarchical approach preserves the domain-specific topology of each space before integrating them into a unified map and facilitated the identification of functional convergences, where structurally heterogeneous compounds are projected into identical regions of biological activity. Model validation was performed using rigorous internal metrics, including quantization error and topographic error.
+By simultaneously projecting chemical structure and known target activity profiles, this workflow provides a robust tool for in silico pharmacological profiling, enabling the detection of drug repurposing opportunities or target fishing of early-stage drug candidates.
+Clustering analysis revealed five distinct groups of compounds differentiated primarily by molecular size, lipophilicity, polarity, and target class distribution. Clusters show well-defined structural motifs, larger and more polar enzyme-associated compounds  being separated from smaller, less polar GPCR-oriented molecules, as well of a distinct group of more lipophilic nuclear receptor ligands. Differences in physicochemical properties were accompanied by variations in target promiscuity, with some clusters exhibiting broader polypharmacology and others showing greater selectivity.
+
+Authors
+-------
+1. nicoleta stoian <nicoleta.stoian01@e-uvt.ro> (Coriolan Dragulescu insititute of chemistry,
+   Bd. Mihai Viteazu 24, 300223, Timisoara, Timis, Romania, Chemistry Department, Faculty of
+   Chemistry, Biology, Geography, West University of Timisoara, Bd. Vasile Parvan 4, 300223,
+   Timisoara, Timis, Romania)
+2. Liliana Halip <lili.halip@gmail.com> (Coriolan Dragulescu insititute of chemistry, Bd. Mihai
+   Viteazu 24, 300223, Timisoara, Timis, Romania)
+3. Laura Pitulice <laura.pitulice@e-uvt.ro> (Chemistry Department, Faculty of Chemistry,
+   Biology, Geography, West University of Timisoara, Bd. Vasile Parvan 4, 300223, Timisoara,
+   Timis, Romania)
+
+Presenter First and Last Name:
+------------------------------
+Nicoleta Stoian
+
+Keywords
+--------
+Self-organizing maps, MACCS fingerprint, ProtBERT protein embeddings, drug repurposing
+
+Topic
+-----
+* Track 7 - Poster session
+
+Please indicate if there were any AI tools involved in the abstract preparation.
+--------------------------------------------------------------------------------
+<ul class="topict topict-long"><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22AI+tools+were+used+for+proofreading%22">AI tools were used for proofreading</a></li></ul>
+
+
+Submission #56: Real-Time Sleep Stage Monitoring Using Neural Networks For Optimal Wake-Up
+Timing
+================================================================================================
+
+Abstract
+--------
+Background: Human sleep architecture is cyclic, oscillating between Non-Rapid Eye Movement (NREM) stages and Rapid Eye Movement (REM). NREM sleep progresses from light sleep (Stages N1 and N2) to deep, slow-wave sleep (Stage N3). Awakening during deep N3 or intense REM sleep often results in sleep inertia, a physiological state characterized by grogginess, disorientation, and cognitive impairment. Conversely, waking up during light sleep stages (N1 or N2) significantly reduces these symptoms, leading to improved alertness and morning functionality. While clinical polysomnography provides high diagnostic accuracy, it is intrusive and unsuitable for long-term home use. This creates a need for comfortable, automated sleep monitoring systems that can identify optimal wake-up moments.
+
+Methods: We propose a low-cost system combining a minimalist 3-electrode EEG headband with a wrist-worn unit containing PPG, EDA, and accelerometer sensors. An MSC-Transformer neural network, trained on the DREAMT dataset, fuses these multimodal signals to classify sleep stages in 30-second windows. A smart alarm algorithm utilizes this classification to trigger wake-up within a user-defined window, specifically targeting light sleep stages (N1/N2). Thus, our specific goal is to implement a neural network-based algorithm that performs continuous sleep stage classification, allowing for a "smart wake-up" mechanism that significantly reduces the grogginess associated with waking from deep sleep or REM.
+
+Results: The model was evaluated using a subject-independent split on 100 subjects (68 training, 12 validation, 20 test). On a 4-class classification task (Wake, Light, Deep, REM), the model achieved 79.27% test accuracy, with 91% precision and 83% recall for detecting light sleep—the critical class for smart alarm applications. Merging N1 and N2 into a single "Light" class improved accuracy by 6% compared to the traditional 5-class approach.
+
+Conclusion: These results demonstrate promising classification performance for sleep stage detection using a reduced sensor setup. However, real-world validation in home environments and empirical testing of the smart wake-up mechanism are needed before the system can be considered a practical alternative to clinical polysomnography.
+
+Authors
+-------
+1. Andrei-Marius Stoica <andrei.stoica04@e-uvt.ro> (West University of Timisoara)
+2. Sebastian-Aurelian Stefaniga <sebastian.stefaniga@e-uvt.ro> (West University of Timisoara)
+
+Presenter First and Last Name:
+------------------------------
+Stoica Andrei-Marius
+
+Keywords
+--------
+Sleep stage classification, Electroencephalography (EEG), Photoplethysmography (PPG) Multi-modal bio signals, Smart wake-up system
+
+Topic
+-----
+* Track 6 - AI in Medicine: Turning Data into Predictions and Insights
+
+Please indicate if there were any AI tools involved in the abstract preparation.
+--------------------------------------------------------------------------------
+<ul class="topict topict-long"><li class="topicti"><a class="q" href="/2026/index/search?q=PleIndThe%3A%22AI+tools+were+used+for+proofreading%22">AI tools were used for proofreading</a></li></ul>
+
+
